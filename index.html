@@ -1,0 +1,2195 @@
+﻿<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Navaa Designs - Grace in Every Thread</title>
+		<link href="https://fonts.googleapis.com/css?family=Muli:400,600,700,800" rel="stylesheet" >
+		<link href="http://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet" type="text/css" >		 
+		<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">	
+		<link rel="stylesheet" href="css/font-awesome.css" />
+		<link rel="stylesheet" href="css/themify-icons.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/owl.theme.default.min.css" />
+		<link rel="stylesheet" href="css/owl.carousel.min.css" />
+		<link rel="stylesheet" href="css/meanmenu.min.css" />
+		<link rel="stylesheet" href="css/remodal.css" />
+		<link rel="stylesheet" href="css/remodal-default-theme.css" />
+		<link rel="stylesheet" href="css/venobox.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />	
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/responsive.css" />	
+		<style>
+			#header_area .main-menu nav > ul > li:nth-child(n+4):not(:last-child),
+			#header_area .mobile-menu nav > ul > li:nth-child(n+4):not(:last-child),
+			#header_area .main-menu nav > ul > li > ul,
+			#header_area .main-menu nav > ul > li > .mega-menu,
+			#header_area .mobile-menu nav > ul > li > ul,
+			#header_area .mean-nav > ul > li:nth-child(n+4):not(:last-child),
+			#header_area .mean-nav > ul > li > ul,
+			#header_area .mean-nav > ul > li > a.mean-expand {
+				display: none;
+			}
+			#header_area .logo img {
+				display: block;
+				width: 120px;
+				max-width: 100%;
+				height: auto;
+			}
+			@media (max-width: 767px) {
+				#header_area .logo img {
+					width: 100px;
+				}
+			}
+			#trending-products + .row .product-image {
+				background: #f3eee7;
+			}
+			#trending-products + .row .product-grid {
+				display: flex;
+				flex-direction: column;
+				padding: 0;
+				overflow: hidden;
+				border: 1px solid #e8e1d8;
+				border-radius: 10px;
+				background: #fff;
+				box-shadow: 0 5px 18px rgba(51, 38, 28, 0.07);
+				transition: box-shadow 0.2s ease, transform 0.2s ease;
+			}
+			#trending-products + .row .product-grid:hover {
+				transform: translateY(-3px);
+				box-shadow: 0 10px 24px rgba(51, 38, 28, 0.12);
+			}
+			#trending-products + .row .product-image {
+				aspect-ratio: 4 / 5;
+				overflow: hidden;
+			}
+			#trending-products + .row .product-image > a {
+				height: 100%;
+			}
+			#trending-products + .row .product-image img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			#trending-products + .row .product-content {
+				position: static;
+				display: flex;
+				flex: 0 0 auto;
+				flex-direction: column;
+				align-items: stretch;
+				margin: 0;
+				padding: 14px;
+				text-align: left;
+			}
+			#trending-products + .row .trending-vendor {
+				margin: 0 0 8px;
+				color: #887b6f;
+				font-size: 11px;
+				font-weight: 600;
+				letter-spacing: 0.07em;
+				line-height: 1.3;
+				text-transform: uppercase;
+			}
+			#trending-products + .row .product-content .title {
+				display: flex;
+				min-height: 60px;
+				align-items: flex-start;
+				margin: 0 0 10px;
+				font-size: 15px;
+				font-weight: 600;
+				line-height: 1.4;
+			}
+			#trending-products + .row .product-content .title a {
+				color: #332b25;
+			}
+			#trending-products + .row .product-content .price {
+				margin: 0 0 12px;
+				color: var(--navaa-gold-dark);
+				font-size: 18px;
+				font-weight: 700;
+				line-height: 1.3;
+				text-align: left;
+			}
+			#trending-products + .row .trending-price-label {
+				display: block;
+				margin: 0;
+				color: #887b6f;
+				font-size: 12px;
+				font-weight: 400;
+				line-height: 1.2;
+				text-decoration: none;
+			}
+			#trending-products + .row .trending-actions {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 8px;
+				margin-top: 8px;
+			}
+			#trending-products + .row .trending-actions a {
+				display: flex;
+				min-height: 38px;
+				align-items: center;
+				justify-content: center;
+				padding: 7px;
+				border: 1px solid var(--navaa-gold-dark);
+				border-radius: 4px;
+				color: var(--navaa-gold-dark);
+				font-size: 12px;
+				font-weight: 600;
+				line-height: 1.2;
+				text-align: center;
+				text-decoration: none;
+			}
+			#trending-products + .row .trending-actions .trending-add-cart {
+				border-color: var(--navaa-accent);
+				background: var(--navaa-accent);
+				color: #fff;
+			}
+			#collections .collection-card {
+				padding: 0 !important;
+				min-height: 0 !important;
+				overflow: hidden;
+				border: 1px solid #e8e1d8;
+				border-radius: 8px;
+				box-shadow: 0 5px 16px rgba(51, 38, 28, 0.06);
+			}
+			#collections .collection-image {
+				display: block;
+				width: 100%;
+				height: auto;
+				aspect-ratio: 4 / 5;
+				object-fit: cover;
+			}
+			#collections .collection-card .process_content {
+				display: flex;
+				min-height: 94px;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				padding: 12px;
+			}
+			#collections .collection-card h3 {
+				display: flex;
+				min-height: 42px;
+				align-items: center;
+				justify-content: center;
+				margin: 0 0 6px;
+				font-size: 16px;
+				line-height: 1.35;
+				text-align: center;
+			}
+			#collections .collection-card p {
+				margin: 0;
+				padding: 4px 10px;
+				border-radius: 999px;
+				background: #f5f1eb;
+				color: #756452;
+				font-size: 12px;
+				letter-spacing: 0.04em;
+			}
+			#brand_area .brand-story {
+				max-width: 850px;
+				margin: 0 auto;
+				margin-bottom: 0;
+			}
+			#brand_area .brand-story-copy {
+				margin: 18px auto 24px;
+				color: #777;
+				font-size: 15px;
+				line-height: 1.8;
+			}
+			#brand_area .brand-story-link {
+				display: inline-block;
+				padding: 10px 22px;
+				border-radius: 2px;
+				background: var(--navaa-accent);
+				color: #fff;
+				font-size: 13px;
+				letter-spacing: 0.04em;
+				text-decoration: none;
+			}
+			#brand_area .brand-story-link:hover,
+			#brand_area .brand-story-link:focus {
+				background: var(--navaa-accent-dark);
+				color: #fff;
+			}
+			:root {
+				--navaa-ink: #171717;
+				--navaa-gold-dark: #9b713b;
+				--navaa-accent: #ba8a48;
+				--navaa-accent-dark: #966a31;
+				--navaa-muted: #6f665b;
+				--navaa-cream: #f8f5ef;
+				--navaa-border: #e9e0d2;
+			}
+			html {
+				scroll-behavior: smooth;
+			}
+			body {
+				color: var(--navaa-ink);
+				font-family: 'Muli', sans-serif;
+				line-height: 1.65;
+			}
+			a {
+				transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+			}
+			a:focus-visible,
+			button:focus-visible {
+				outline: 2px solid var(--navaa-accent);
+				outline-offset: 3px;
+			}
+			#header_area {
+				position: relative;
+				z-index: 20;
+				background: #fff;
+				box-shadow: 0 4px 20px rgba(51, 38, 28, 0.06);
+			}
+			#header_area .header_top_area {
+				border-bottom: 1px solid var(--navaa-border);
+				background: var(--navaa-cream);
+			}
+			#header_area .header_btm_area {
+				background: #fff;
+			}
+			#header_area .hdr_tp_right li span {
+				color: inherit;
+			}
+			#header_area .main-menu nav > ul > li > a {
+				font-weight: 600;
+				letter-spacing: 0.04em;
+				transition: color 0.2s ease;
+			}
+			#header_area .main-menu nav > ul > li > a:hover,
+			#header_area .main-menu nav > ul > li > a:focus {
+				color: var(--navaa-accent);
+			}
+			#slider_area .slider_content {
+				max-width: 680px;
+			}
+			#slider_area .slider_content h1 {
+				line-height: 1.2;
+				text-shadow: 0 2px 18px rgba(0, 0, 0, 0.28);
+			}
+			#slider_area .slider_content h4 {
+				max-width: 620px;
+				line-height: 1.7;
+				text-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+			}
+			#slider_area .slider_content .main_btn {
+				padding: 12px 24px;
+				border-radius: 4px;
+				font-weight: 600;
+				letter-spacing: 0.03em;
+			}
+			.section_padding {
+				padding-top: 72px;
+				padding-bottom: 72px;
+			}
+			.section_title {
+				margin-bottom: 40px;
+			}
+			.section_title h2 {
+				color: var(--navaa-ink);
+				letter-spacing: 2px;
+				line-height: 1.35;
+			}
+			.section_title .sub-title {
+				color: var(--navaa-muted);
+				letter-spacing: 0.08em;
+			}
+			#promo_area .single_promo {
+				border-radius: 10px;
+				box-shadow: 0 8px 24px rgba(51, 38, 28, 0.1);
+			}
+			#promo_area .single_promo img {
+				display: block;
+				border-radius: 10px;
+				transition: transform 0.35s ease;
+			}
+			#promo_area .single_promo:hover img {
+				transform: scale(1.035);
+			}
+			#product_area .product_filter ul li {
+				margin: 0 4px 8px;
+				border: 1px solid var(--navaa-border);
+				background: #fff;
+				color: var(--navaa-muted);
+			}
+			#product_area .product_filter ul li:hover,
+			#product_area .product_filter .filter.active {
+				border-color: var(--navaa-accent);
+				background: var(--navaa-accent);
+				color: #fff;
+			}
+			#product_area .product-grid,
+			#featured_product .product-grid {
+				display: flex;
+				width: 100%;
+				height: 100%;
+				flex-direction: column;
+				padding: 0;
+				overflow: hidden;
+				border: 1px solid var(--navaa-border);
+				border-radius: 10px;
+				background: #fff;
+				box-shadow: 0 5px 18px rgba(51, 38, 28, 0.06);
+				transition: transform 0.2s ease, box-shadow 0.2s ease;
+			}
+			#product_area .product-grid:hover,
+			#featured_product .product-grid:hover {
+				transform: translateY(-4px);
+				box-shadow: 0 12px 28px rgba(51, 38, 28, 0.12);
+			}
+			#product_area .product-image,
+			#featured_product .product-image {
+				overflow: hidden;
+				background: #f3eee7;
+				aspect-ratio: 4 / 5;
+			}
+			#product_area .product-image > a,
+			#featured_product .product-image > a {
+				height: 100%;
+			}
+			#product_area .product-image img,
+			#featured_product .product-image img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			#product_area .product-grid .rating,
+			#featured_product .product-grid .rating {
+				z-index: 0;
+				padding: 12px 14px 0;
+				text-align: left;
+			}
+			#product_area .product-content,
+			#featured_product .product-content {
+				position: static;
+				display: flex;
+				flex: 1 0 auto;
+				flex-direction: column;
+				align-items: stretch;
+				margin: 0;
+				padding: 12px 14px 16px;
+				text-align: left;
+			}
+			#product_area .product-content .title,
+			#featured_product .product-content .title {
+				display: flex;
+				min-height: 42px;
+				align-items: flex-start;
+				margin: 0 0 10px;
+				font-size: 15px;
+				font-weight: 600;
+				line-height: 1.4;
+			}
+			#product_area .product-content .title a,
+			#featured_product .product-content .title a {
+				color: var(--navaa-ink);
+			}
+			#product_area .product-content .price,
+			#featured_product .product-content .price {
+				margin-bottom: 12px;
+				color: var(--navaa-gold-dark);
+				text-align: left;
+			}
+			#product_area .product-content .add-to-cart,
+			#featured_product .product-content .add-to-cart {
+				display: inline-flex;
+				min-height: 38px;
+				align-items: center;
+				justify-content: center;
+				margin-top: auto;
+				padding: 8px 12px;
+				border: 1px solid var(--navaa-gold-dark);
+				border-radius: 4px;
+				color: var(--navaa-gold-dark);
+				text-align: center;
+				text-decoration: none;
+			}
+			#product_area .product-content .add-to-cart:hover,
+			#featured_product .product-content .add-to-cart:hover {
+				border-color: var(--navaa-accent);
+				background: var(--navaa-accent);
+				color: #fff;
+			}
+			#collections .collection-card {
+				height: calc(100% - 24px);
+				margin-bottom: 24px;
+				border-color: var(--navaa-border);
+				border-radius: 10px;
+				transition: transform 0.2s ease, box-shadow 0.2s ease;
+			}
+			#collections .collection-card:hover {
+				transform: translateY(-4px);
+				box-shadow: 0 12px 26px rgba(51, 38, 28, 0.12);
+			}
+			#collections .collection-card h3 {
+				color: var(--navaa-ink);
+			}
+			#trending-products + .row {
+				display: flex;
+				flex-wrap: wrap;
+			}
+			#trending-products + .row > [class*="col-"] {
+				display: flex;
+				margin-bottom: 24px;
+			}
+			#trending-products + .row .product-grid {
+				width: 100%;
+				height: 100%;
+			}
+			.special_offer_area .row.text-center {
+				display: flex;
+				flex-wrap: wrap;
+			}
+			.special_offer_area .row.text-center > [class*="col-"] {
+				display: flex;
+				margin-bottom: 20px;
+			}
+			.special_offer_area .single-process {
+				width: 100%;
+				min-height: 190px;
+				border-color: var(--navaa-border);
+				border-radius: 10px;
+				box-shadow: 0 4px 16px rgba(51, 38, 28, 0.04);
+				transition: transform 0.2s ease, box-shadow 0.2s ease;
+			}
+			.special_offer_area .single-process:hover,
+			.process_area .single-process:hover {
+				transform: translateY(-3px);
+				box-shadow: 0 10px 24px rgba(51, 38, 28, 0.1);
+			}
+			@media (max-width: 991px) {
+				#slider_area,
+				#slider_area .single_slide,
+				#slider_area .single-slide-item-table {
+					height: 520px;
+				}
+			}
+			.special_offer_area .single-process .picon {
+				display: inline-flex;
+				width: 54px;
+				height: 54px;
+				align-items: center;
+				justify-content: center;
+				border-radius: 50%;
+				background: #f5ecdf;
+			}
+			.special_offer_area .single-process .picon i {
+				font-size: 23px;
+			}
+			#featured_product .container > .row.text-center {
+				display: flex;
+				flex-wrap: wrap;
+			}
+			#featured_product .container > .row.text-center > [class*="col-"] {
+				display: flex;
+				margin-bottom: 24px;
+			}
+			#testimonials {
+				background-position: center;
+			}
+			#testimonials .container {
+				position: relative;
+				z-index: 1;
+			}
+			#testimonials .section_title h2,
+			#testimonials .section_title .sub-title {
+				color: #fff;
+			}
+			#testimonials .testimonial .description {
+				max-width: 760px;
+				margin-right: auto;
+				margin-left: auto;
+				font-size: 18px;
+				line-height: 1.8;
+			}
+			#blog_area > .container > .row:last-child {
+				display: flex;
+				flex-wrap: wrap;
+			}
+			#blog_area > .container > .row:last-child > [class*="col-"] {
+				display: flex;
+				margin-bottom: 24px;
+			}
+			#blog_area .single_blog {
+				display: flex;
+				width: 100%;
+				flex-direction: column;
+				overflow: hidden;
+				border: 1px solid var(--navaa-border);
+				border-radius: 10px;
+				background: #fff;
+				box-shadow: 0 5px 18px rgba(51, 38, 28, 0.05);
+				transition: transform 0.2s ease, box-shadow 0.2s ease;
+			}
+			#blog_area .single_blog:hover {
+				transform: translateY(-4px);
+				box-shadow: 0 12px 26px rgba(51, 38, 28, 0.11);
+			}
+			#blog_area .single_blog .blog_content {
+				display: flex;
+				flex: 1;
+				flex-direction: column;
+				padding: 20px 22px 24px;
+			}
+			#blog_area .single_blog .post-meta {
+				display: none;
+			}
+			#blog_area .single_blog .post_title {
+				min-height: 48px;
+				line-height: 1.45;
+			}
+			#blog_area .single_blog .blog_content p {
+				margin: 0;
+				color: var(--navaa-muted);
+				line-height: 1.7;
+			}
+			.process_area .single-process {
+				height: calc(100% - 24px);
+				margin-bottom: 24px;
+				border-color: var(--navaa-border);
+				border-radius: 10px;
+				box-shadow: 0 4px 16px rgba(51, 38, 28, 0.04);
+				transition: transform 0.2s ease, box-shadow 0.2s ease;
+			}
+			@media (hover: none) {
+				#promo_area .single_promo:before,
+				#promo_area .single_promo:after,
+				#promo_area .single_promo .box-content:before,
+				#promo_area .single_promo .box-content:after {
+					top: 0;
+					opacity: 1;
+				}
+				#promo_area .single_promo .promo-content,
+				#promo_area .single_promo .post,
+				#promo_area .single_promo .box-content p,
+				#promo_area .single_promo .shop_now_btn {
+					opacity: 1;
+				}
+			}
+			#promo_area .single_promo img {
+				aspect-ratio: 1 / 1;
+				object-fit: cover;
+			}
+			#blog_area .single_blog_img {
+				overflow: hidden;
+			}
+			#blog_area .single_blog_img img {
+				display: block;
+				width: 100%;
+				height: auto;
+				aspect-ratio: 8 / 5;
+				object-fit: cover;
+			}
+			@media (max-width: 767px) {
+				#slider_area,
+				#slider_area .single_slide,
+				#slider_area .single-slide-item-table {
+					height: 480px;
+				}
+				.section_padding {
+					padding-top: 54px;
+					padding-bottom: 54px;
+				}
+				.section_title {
+					margin-bottom: 32px;
+				}
+				.section_title h2 {
+					font-size: 21px;
+					letter-spacing: 1.2px;
+				}
+				#slider_area .single_slide {
+					background-position: center;
+				}
+				#slider_area .slider_content {
+					max-width: 100%;
+				}
+				#slider_area .slider_content h1 {
+					font-size: 27px;
+					letter-spacing: 2px;
+				}
+				#slider_area .slider_content h4 {
+					font-size: 14px;
+				}
+				#product_area .product_filter ul {
+					margin-bottom: 24px;
+				}
+				#product_area .product_filter ul li {
+					padding: 9px 14px;
+					font-size: 12px;
+				}
+				#collections .container > .row:nth-child(3) > [class*="col-"],
+				#product_area .product_item .row > .mix,
+				#trending-products + .row > [class*="col-"],
+				#featured_product .container > .row.text-center > [class*="col-"] {
+					width: 50%;
+				}
+				#blog_area > .container > .row:last-child > [class*="col-"],
+				.special_offer_area .row.text-center > [class*="col-"] {
+					width: 100%;
+				}
+				#trending-products + .row > [class*="col-"],
+				.special_offer_area .row.text-center > [class*="col-"],
+				#featured_product .container > .row.text-center > [class*="col-"] {
+					margin-bottom: 16px;
+				}
+				#testimonials {
+					background-attachment: scroll !important;
+				}
+				#testimonials .owl-nav {
+					display: none;
+				}
+				#testimonials .testimonial .description {
+					font-size: 16px;
+				}
+				#slider_area .container {
+					width: 100%;
+					padding-right: 24px;
+					padding-left: 24px;
+				}
+				#slider_area .slider_content.text-left,
+				#slider_area .slider_content.text-right {
+					padding-right: 0;
+					padding-left: 0;
+					text-align: center !important;
+				}
+				#slider_area .slider_content h1 {
+					letter-spacing: 3px;
+				}
+			}
+			@media (max-width: 480px) {
+				#slider_area,
+				#slider_area .single_slide,
+				#slider_area .single-slide-item-table {
+					height: 440px;
+				}
+			}
+			@media (prefers-reduced-motion: reduce) {
+				*,
+				*::before,
+				*::after {
+					scroll-behavior: auto !important;
+					transition-duration: 0.01ms !important;
+					animation-duration: 0.01ms !important;
+				}
+			}
+		</style>
+	</head>
+	<body>
+	
+		<!--  Start Preloader  -->
+		
+		<div class="preloader">
+			<div class="status-mes">
+				<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+			</div>
+		</div>
+		<!-- End Preloader -->
+		
+		<!--  Start Header  -->
+		<header id="header_area">
+			<div class="header_top_area">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6">
+							<div class="hdr_tp_left">
+								<div class="call_area">
+									<span class="single_con_add"><i class="ti-mobile"></i> 9947406541</span>
+									<span class="single_con_add"><i class="ti-email"></i> navaadesigns25@gmail.com</span>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-xs-12 col-sm-6">
+			
+							<ul class="hdr_tp_right text-right">
+								<li class="account_area"><a href="login.html"><i class="ti-user"></i> My Account</a></li>
+								<li class="lan_area"><span><i class="ti-book"></i> English</span></li>
+							
+								<li class="currency_area"><span><i class="fa fa-inr" aria-hidden="true"></i> INR ₹</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div> <!--  HEADER START  -->
+			
+			<div class="header_btm_area">
+				<div class="container">
+					<div class="row">		
+						<div class="col-xs-12 col-sm-12 col-md-3"> 
+							<a class="logo" href="index.html"><img src="img/logo.jpg" alt="Navaa Designs"></a>
+						</div><!--  End Col -->
+						
+						<div class="col-xs-12 col-sm-12 col-md-7 text-center">
+							<div class="menu_wrap">
+								<div class="main-menu">
+									<nav>
+										<ul>
+											<li><a href="index.html">Home Page</a>					
+											</li>									
+											
+											<li><a href="shop.html">Products</a>
+												<!-- Sub Menu -->
+												<ul class="sub-menu">
+													<li><a href="product-details.html">Product Details</a></li>
+													<li><a href="cart.html">Cart</a></li>
+													<li><a href="checkout.html">Checkout</a></li>
+													<li><a href="wishlist.html">Wishlist</a></li>
+													<li><a href="account.html">Account</a></li>
+												</ul>
+											</li>
+											<li><a href="#collections">Collections</a>
+												<!-- Mega Menu -->
+												<div class="mega-menu mm-4-column mm-left">
+													<div class="mm-column mm-column-link float-left">
+														<h3>Men</h3>
+														<a href="#">Blazers</a>
+														<a href="#">Jackets</a>
+														<a href="#">Collections</a>
+														<a href="#">T-Shirts</a>
+														<a href="#">jens pant’s</a>
+														<a href="#">sports shoes</a>												
+													</div>
+													
+													<div class="mm-column mm-column-link float-left">
+														<h3>Women</h3>
+														<a href="#">Blazers</a>
+														<a href="#">Jackets</a>
+														<a href="#">Collections</a>
+														<a href="#">T-Shirts</a>
+														<a href="#">jens pant’s</a>
+														<a href="#">sports shoes</a>												
+													</div>
+													
+													<div class="mm-column mm-column-link float-left">
+														<h3>Jackets</h3>
+														<a href="#">Blazers</a>
+														<a href="#">Jackets</a>
+														<a href="#">Collections</a>
+														<a href="#">T-Shirts</a>
+														<a href="#">jens pant’s</a>
+														<a href="#">sports shoes</a>	
+													</div>						
+
+													<div class="mm-column mm-column-link float-left">
+														<h3>jens pant’s</h3>
+														<a href="#">Blazers</a>
+														<a href="#">Jackets</a>
+														<a href="#">Collections</a>
+														<a href="#">T-Shirts</a>
+														<a href="#">jens pant’s</a>
+														<a href="#">sports shoes</a>	
+													</div>
+
+												</div>
+											</li>
+											<li><a href="#">Women <i class="fa fa-angle-down"></i></a>
+												<!-- Mega Menu -->
+												<div class="mega-menu mm-3-column mm-left">
+													<div class="mm-column mm-column-link float-left">
+														<h3>Woment</h3>
+														<a href="#">Blazers</a>
+														<a href="#">Jackets</a>
+														<a href="#">Collections</a>
+														<a href="#">T-Shirts</a>
+														<a href="#">jens pant’s</a>
+														<a href="#">sports shoes</a>	
+													</div>
+													
+													<div class="mm-column mm-column-link float-left">
+														<h3>T-Shirts</h3>
+														<a href="#">Blazers</a>
+														<a href="#">Jackets</a>
+														<a href="#">Collections</a>
+														<a href="#">T-Shirts</a>
+														<a href="#">jens pant’s</a>
+														<a href="#">sports shoes</a>	
+													</div>					
+
+													<div class="mm-column mm-column-link float-left">
+														<h3>Jackets</h3>
+														<a href="#">Blazers</a>
+														<a href="#">Jackets</a>
+														<a href="#">Collections</a>
+														<a href="#">T-Shirts</a>
+														<a href="#">jens pant’s</a>
+														<a href="#">sports shoes</a>	
+													</div>												
+				
+												</div>
+											</li>
+											
+											<li><a href="#">pages <i class="fa fa-angle-down"></i></a>
+												<!-- Sub Menu -->
+												<ul class="sub-menu">
+													<li><a href="left-sidebar-blog.html">Left Sidebar Blog</a></li>
+													<li><a href="right-sidebar-blog.html">Right Sidebar Blog</a></li>
+													<li><a href="full-width-blog.html">Full Width Blog</a></li>
+													<li><a href="blog-details.html">Blog Details</a></li>
+													<li><a href="about-us.html">About Us</a></li>
+													<li><a href="contact.html">Contact Us</a></li>
+													<li><a href="404.html">404 Page</a></li>
+												</ul>
+											</li>
+											<li><a href="contact.html">Contact</a></li>
+										</ul>
+									</nav>
+								</div> <!--  End Main Menu -->					
+
+								<div class="mobile-menu text-right ">
+									<nav>
+										<ul>
+											<li><a href="index.html">Home Page</a>																				</li>																																																																																																																																																		
+											<li><a href="shop.html">Products</a>
+												<!-- Sub Menu -->
+												<ul>
+													<li><a href="product-details.html">Product Details</a></li>
+													<li><a href="cart.html">Cart</a></li>
+													<li><a href="checkout.html">Checkout</a></li>
+													<li><a href="wishlist.html">Wishlist</a></li>
+												</ul>
+											</li>
+											<li><a href="#collections">Collections</a>																		
+												<ul>
+													<li><a href="#">Blazers</a></li>
+													<li><a href="#">Jackets</a></li>
+													<li><a href="#">Collections</a></li>
+													<li><a href="#">T-Shirts</a></li>
+													<li><a href="#">jens pant’s</a></li>
+													<li><a href="#">sports shoes</a></li>
+												</ul>																				
+											</li>
+											
+											<li><a href="#">Women</a>
+												<ul>
+													<li><a href="#">gagets</a></li>
+													<li><a href="#">laptop</a></li>
+													<li><a href="#">mobile</a></li>
+													<li><a href="#">lifestyle</a></li>
+													<li><a href="#">jens pant’s</a></li>
+													<li><a href="#">sports items</a></li>
+												</ul>
+											</li>
+										
+											<li><a href="#">pages</a>											
+												<ul>
+													<li><a href="blog.html">Blog</a></li>
+													<li><a href="blog-details.html">Blog Details</a></li>
+													<li><a href="about-us.html">About Us</a></li>
+													<li><a href="contact.html">Contact Us</a></li>
+													<li><a href="404.html">404 Page</a></li>
+												</ul>
+											</li>
+											<li><a href="contact.html">Contact</a></li>
+										</ul>
+									</nav>
+								</div> <!--  End mobile-menu -->						
+							</div>
+						</div><!--  End Col -->		
+
+						<div class="col-xs-12 col-sm-12 col-md-2">
+							<div class="right_menu pull-right">
+								<ul class="nav">
+									<li>
+										<div class="search_icon">
+											<a href="#modal" data-remodal-target="modal"><i class="ti-search search_btn"></i></a>
+											
+											<div class="search-box remodal" data-remodal-id="modal">
+												<button data-remodal-action="close" class="remodal-close"></button>
+												<form action="#" method="Post">
+													<div class="input-group">
+														<input type="search" class="form-control" placeholder="Search products" aria-label="Search products"/>				
+														<button type="submit" class="btn btn-default"><i class="ti-search"></i></button>			
+													</div>
+												</form>
+											</div>
+										</div>
+									</li>
+									
+									<li>
+										<div class="cart_menu_area">
+											<div class="cart_icon">
+												<a href="#"><i class="ti-shopping-cart-full" aria-hidden="true"></i></a>
+												<span class="cart_number">2</span>
+											</div>
+											
+											
+											<!-- Mini Cart Wrapper -->
+											<div class="mini-cart-wrapper">
+												<!-- Product List -->
+												<div class="mc-pro-list fix">
+													<div class="mc-sin-pro fix">
+														<a href="#" class="mc-pro-image float-left"><img src="img/home/saree-green.jpg" alt="Green traditional saree" /></a>
+														<div class="mc-pro-details fix">
+															<a href="#">This is Product Name</a>
+															<span>1x₹25.00</span>
+															<a class="pro-del" href="#"><i class="fa fa-times-circle"></i></a>
+														</div>
+													</div>
+													<div class="mc-sin-pro fix">
+														<a href="#" class="mc-pro-image float-left"><img src="img/home/kasavu-saree.jpg" alt="Kerala kasavu saree" /></a>
+														<div class="mc-pro-details fix">
+															<a href="#">This is Product Name</a>
+															<span>1x₹25.00</span>
+															<a class="pro-del" href="#"><i class="fa fa-times-circle"></i></a>
+														</div>
+													</div>
+												</div>
+												<!-- Sub Total -->
+												<div class="mc-subtotal fix">
+													<h4>Subtotal <span>₹50.00</span></h4>												
+												</div>
+												<!-- Cart Button -->
+												<div class="mc-button">
+													<a href="#" class="checkout_btn">checkout</a>
+												</div>
+											</div>											
+										</div>	
+										
+									</li>
+								</ul>
+							</div>	
+						</div><!--  End Col -->	
+						
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--  End Header  -->
+		
+		
+		<!-- Start Slider Area -->
+		<section id="slider_area" class="text-center">
+			<div class="slider_active owl-carousel">
+				<div class="single_slide" style="background-image: url(img/collections/settu%20mundu.jpg); background-size: cover; background-position: center;">
+					<div class="container">	
+						<div class="single-slide-item-table">
+							<div class="single-slide-item-tablecell">
+								<div class="slider_content text-left slider-animated-1">						
+									<p class="animated">Navaa Designs</p>
+									<h1 class="animated">Grace in Every Thread</h1>
+									<h4 class="animated">Explore a variety of fabrics and patterns designed to bring style, comfort, and tradition together.</h4>
+									<a href="shop.html" class="btn main_btn animated">Shop Now</a>
+								</div>
+							</div>
+						</div>						
+					</div>
+				</div>
+				
+				<div class="single_slide" style="background-image: url(img/home/hero-saree-orange.jpg); background-size: cover; background-position: center ;">
+					<div class="container">		
+						<div class="single-slide-item-table">
+							<div class="single-slide-item-tablecell">
+								<div class="slider_content text-center slider-animated-2">						
+									<p class="animated">Traditional Elegance</p>
+									<h1 class="animated">Classic Ethnic Wear for Every Woman</h1>
+									<h4 class="animated">Celebrate special occasions or everyday moments with our carefully curated ethnic wear collections.</h4>
+									<a href="shop.html" class="btn main_btn animated">Shop Now</a>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+				
+				<div class="single_slide" style="background-image: url(img/collections/Kanchipuram%20Silk%20Saree.jpg); background-size: cover; background-position: center ;">
+					<div class="container">
+						<div class="single-slide-item-table">
+							<div class="single-slide-item-tablecell">
+								<div class="slider_content text-right slider-animated-3">						
+									<p class="animated">Kerala Inspired</p>
+									<h1 class="animated">Where Tradition Meets Everyday Elegance</h1>
+									<h4 class="animated">Experience the beauty of rich fabrics, elegant patterns, and timeless styles inspired by Kerala tradition.</h4>
+									<a href="shop.html" class="btn main_btn animated">Shop Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Slider Area -->		
+	
+		<!--  Promo ITEM STRAT  -->
+		<section id="promo_area" class="section_padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-sm-12">							
+						<div class="single_promo">
+							<img src="img/home/saree-red.jpg" alt="Woman wearing a red festive saree">
+							<div class="box-content">
+								<div class="promo-content">
+									<h3 class="title">Sarees</h3>
+									<span class="post">Traditional Collections</span>
+									<p>Timeless styles for every celebration</p>
+									<a class="shop_now_btn" href="shop.html">Shop Now</a>
+								</div>
+							</div>
+						</div>													
+					</div><!--  End Col -->						
+					
+					<div class="col-lg-4 col-md-6 col-sm-12">							
+						<div class="single_promo">
+							<img src="img/home/kasavu-saree.jpg" alt="Kerala settu mundu in white and gold">
+							<div class="box-content">
+								<div class="promo-content">
+									<h3 class="title">Settu Mundu</h3>
+									<span class="post">Kerala Tradition</span>
+									<p>Elegant weaves for every occasion</p>
+									<a class="shop_now_btn" href="shop.html">Shop Now</a>
+								</div>
+							</div>
+						</div>														
+					</div><!--  End Col -->					
+
+					<div class="col-lg-4 col-md-6 col-sm-12">					
+						<div class="single_promo">
+							<img src="img/home/jewellery.jpg" alt="Traditional gold jewellery">
+							<div class="box-content">
+								<div class="promo-content">
+									<h3 class="title">Jewellery</h3>
+									<span class="post">Festive Finishing Touches</span>
+									<p>Complete your look with a touch of tradition</p>
+									<a class="shop_now_btn" href="shop.html">Shop Now</a>
+								</div>
+							</div>
+						</div>									
+					</div><!--  End Col -->					
+				</div>			
+			</div>		
+		</section>
+		<!--  Promo ITEM END -->	
+		
+
+		<!-- Start product Area -->
+		<section id="product_area" class="section_padding">
+			<div class="container">		
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="section_title">	
+							<span class="sub-title">Elegant • Traditional • Modern</span>
+							<h2>Shop Our Products</h2>
+							<div class="divider"></div>							
+						</div>
+					</div>
+				</div>
+			
+				<div class="text-center">
+					<div class="product_filter">
+						<ul>
+							<li class=" active filter" data-filter="all">All</li>
+							<li class="filter" data-filter=".sale">Sale</li>
+							<li class="filter" data-filter=".bslr">Bestseller</li>
+							<li class="filter" data-filter=".ftrd">Featured</li>
+						</ul>
+					</div>
+					
+					<div class="product_item">
+						<div class="row">					
+							<div class="col-lg-3 col-md-4 col-sm-6 mix sale">
+								<div class="product-grid">
+									<div class="product-image">
+										<a href="#">
+											<img class="pic-1" src="img/home/saree-red.jpg" alt="Woman wearing a red festive saree">
+											<img class="pic-2" src="img/home/saree-orange.jpg" alt="Woman wearing an orange saree">
+										</a>
+										<ul class="social">
+											<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
+											<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
+											<li><a href="" data-tip="Add to Cart"><i class="ti-shopping-cart"></i></a></li>
+										</ul>
+										<span class="product-new-label">Sale</span>
+									</div>
+									<ul class="rating">
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+									</ul>
+									<div class="product-content">
+										<h3 class="title"><a href="#">Product Title</a></h3>
+										<div class="price">₹16.00
+											<span>₹20.00</span>
+										</div>
+										<a class="add-to-cart" href="">+ Add To Cart</a>
+									</div>
+								</div>
+							</div><!-- End Col -->	
+							
+							<div class="col-lg-3 col-md-4 col-sm-6 mix ftrd">
+								<div class="product-grid">
+									<div class="product-image">
+										<a href="#">
+											<img class="pic-1" src="img/home/saree-green.jpg" alt="Woman wearing a green saree">
+											<img class="pic-2" src="img/home/saree-blue.jpg" alt="Woman wearing a blue saree">
+										</a>
+										<ul class="social">
+											<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
+											<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
+											<li><a href="" data-tip="Add to Cart"><i class="ti-shopping-cart"></i></a></li>
+										</ul>
+										<span class="product-new-label">-20%</span>				
+									</div>
+									<ul class="rating">
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+									</ul>
+									<div class="product-content">
+										<h3 class="title"><a href="#">Product Title</a></h3>
+										<div class="price">₹16.00
+											<span>₹20.00</span>
+										</div>
+										<a class="add-to-cart" href="">+ Add To Cart</a>
+									</div>
+								</div>
+							</div><!-- End Col -->	
+									
+							<div class="col-lg-3 col-md-4 col-sm-6 mix">
+								<div class="product-grid">
+									<div class="product-image">
+										<a href="#">
+											<img class="pic-1" src="img/home/bridal.jpg" alt="Woman wearing an ornate bridal saree">
+											<img class="pic-2" src="img/home/saree-blue.jpg" alt="Woman wearing a blue saree">
+										</a>
+										<ul class="social">
+											<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
+											<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
+											<li><a href="" data-tip="Add to Cart"><i class="ti-shopping-cart"></i></a></li>
+										</ul>
+										<span class="product-new-label">Sale</span>
+									</div>
+									<ul class="rating">
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star disable"></li>
+									</ul>
+									<div class="product-content">
+										<h3 class="title"><a href="#">Product Title</a></h3>
+										<div class="price">₹16.00
+											<span>₹20.00</span>
+										</div>
+										<a class="add-to-cart" href="">+ Add To Cart</a>
+									</div>
+								</div>
+							</div><!-- End Col -->	
+
+							
+							<div class="col-lg-3 col-md-4 col-sm-6 mix sale bslr">
+								<div class="product-grid">
+									<div class="product-image">
+										<a href="#">
+											<img class="pic-1" src="img/home/saree-walk.jpg" alt="Woman wearing a traditional saree">
+											<img class="pic-2" src="img/home/saree-pattern.jpg" alt="Black and white traditional saree">
+										</a>
+										<ul class="social">
+											<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
+											<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
+											<li><a href="" data-tip="Add to Cart"><i class="ti-shopping-cart"></i></a></li>
+										</ul>
+										<span class="product-new-label">New</span>
+									</div>
+									<ul class="rating">
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+									</ul>
+									<div class="product-content">
+										<h3 class="title"><a href="#">Product Title</a></h3>
+										<div class="price">₹16.00
+											<span>₹20.00</span>
+										</div>
+										<a class="add-to-cart" href="">+ Add To Cart</a>
+									</div>
+								</div>
+							</div><!-- End Col -->			
+							
+							
+							<div class="col-lg-3 col-md-4 col-sm-6 mix ftrd">
+								<div class="product-grid">
+									<div class="product-image">
+										<a href="#">
+											<img class="pic-1" src="img/home/kasavu-saree.jpg" alt="Kerala kasavu saree">
+											<img class="pic-2" src="img/home/saree-blue.jpg" alt="Woman wearing a blue saree">
+										</a>
+										<ul class="social">
+											<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
+											<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
+											<li><a href="" data-tip="Add to Cart"><i class="ti-shopping-cart"></i></a></li>
+										</ul>
+										<span class="product-new-label">Sale</span>
+									</div>
+									<ul class="rating">
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+									</ul>
+									<div class="product-content">
+										<h3 class="title"><a href="#">Product Title</a></h3>
+										<div class="price">₹16.00
+											<span>₹20.00</span>
+										</div>
+										<a class="add-to-cart" href="">+ Add To Cart</a>
+									</div>
+								</div>
+							</div><!-- End Col -->			
+							
+							<div class="col-lg-3 col-md-4 col-sm-6 mix sale bslr">
+								<div class="product-grid">
+									<div class="product-image">
+										<a href="#">
+											<img class="pic-1" src="img/home/saree-blue.jpg" alt="Woman wearing a blue saree">
+											<img class="pic-2" src="img/home/saree-orange.jpg" alt="Woman wearing an orange saree">
+										</a>
+										<ul class="social">
+											<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
+											<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
+											<li><a href="" data-tip="Add to Cart"><i class="ti-shopping-cart"></i></a></li>
+										</ul>
+										<span class="product-new-label">-30%</span>
+									</div>
+									<ul class="rating">
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+									</ul>
+									<div class="product-content">
+										<h3 class="title"><a href="#">Product Title</a></h3>
+										<div class="price">₹16.00
+											<span>₹20.00</span>
+										</div>
+										<a class="add-to-cart" href="">+ Add To Cart</a>
+									</div>
+								</div>
+							</div><!-- End Col -->		
+							
+							<div class="col-lg-3 col-md-4 col-sm-6 mix sale bslr">
+								<div class="product-grid">
+									<div class="product-image">
+										<a href="#">
+											<img class="pic-1" src="img/home/saree-orange.jpg" alt="Woman wearing an orange saree">
+											<img class="pic-2" src="img/home/saree-pattern.jpg" alt="Black and white traditional saree">
+										</a>
+										<ul class="social">
+											<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
+											<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
+											<li><a href="" data-tip="Add to Cart"><i class="ti-shopping-cart"></i></a></li>
+										</ul>
+										<span class="product-new-label">Sale</span>
+									</div>
+									<ul class="rating">
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+									</ul>
+									<div class="product-content">
+										<h3 class="title"><a href="#">Product Title</a></h3>
+										<div class="price">₹16.00
+											<span>₹20.00</span>
+										</div>
+										<a class="add-to-cart" href="">+ Add To Cart</a>
+									</div>
+								</div>
+							</div><!-- End Col -->	
+
+							
+							<div class="col-lg-3 col-md-4 col-sm-6 mix sale bslr">
+								<div class="product-grid">
+									<div class="product-image">
+										<a href="#">
+											<img class="pic-1" src="img/home/saree-pattern.jpg" alt="Traditional patterned saree">
+											<img class="pic-2" src="img/home/saree-pattern.jpg" alt="Black and white traditional saree">
+										</a>
+										<ul class="social">
+											<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
+											<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
+											<li><a href="" data-tip="Add to Cart"><i class="ti-shopping-cart"></i></a></li>
+										</ul>
+										<span class="product-new-label">-50%</span>
+									</div>
+									<ul class="rating">
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+										<li class="fa fa-star"></li>
+									</ul>
+									<div class="product-content">
+										<h3 class="title"><a href="#">Product Title</a></h3>
+										<div class="price">₹16.00
+											<span>₹20.00</span>
+										</div>
+										<a class="add-to-cart" href="">+ Add To Cart</a>
+									</div>
+								</div>
+							</div><!-- End Col -->			
+		
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End product Area -->
+
+
+		<section id="collections" class="section_padding" style="background: #f8f6f2;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="section_title">
+							<span class="sub-title">Elegant • Traditional • Modern</span>
+							<h2>Our Collections</h2>
+							<div class="divider"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row text-center">
+					<div class="col-md-12">
+						<p style="font-size:18px; line-height:1.8; margin-bottom:30px;">Explore a wide range of sarees, settu mundu, dhotis, salwar materials, tops, and co-ord sets crafted for every occasion.</p>
+					</div>
+				</div>
+				<div class="row text-center">
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="single-process collection-card">
+							<img class="collection-image" src="img/collections/salwar.jpg" alt="Salwar materials">
+							<div class="process_content">
+								<h3>Salwar Materials</h3>
+								<p>19 Items</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="single-process collection-card">
+							<img class="collection-image" src="img/collections/2 piece cord set.jpg" alt="Two-piece co-ord set">
+							<div class="process_content">
+								<h3>Two-Piece Co-ord Sets</h3>
+								<p>0 Items</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="single-process collection-card">
+							<img class="collection-image" src="img/home/bridal.jpg" alt="Bride wearing ornate traditional attire">
+							<div class="process_content">
+								<h3>Three-Piece Sets</h3>
+								<p>1 Item</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="single-process collection-card">
+							<img class="collection-image" src="img/collections/tops.jpg" alt="Traditional tops">
+							<div class="process_content">
+								<h3>Tops</h3>
+								<p>0 Items</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="single-process collection-card">
+							<img class="collection-image" src="img/collections/Kanchipuram Silk Saree.jpg" alt="Kanchipuram silk saree">
+							<div class="process_content">
+								<h3>Kanchipuram Silk Saree</h3>
+								<p>0 Items</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="single-process collection-card">
+							<img class="collection-image" src="img/collections/sarees.jpg" alt="Traditional sarees">
+							<div class="process_content">
+								<h3>Sarees</h3>
+								<p>7 Items</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="single-process collection-card">
+							<img class="collection-image" src="img/collections/settu mundu.jpg" alt="Settu mundu">
+							<div class="process_content">
+								<h3>Settu Mundu</h3>
+								<p>8 Items</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="single-process collection-card">
+							<img class="collection-image" src="img/collections/dhoti.jpg" alt="Traditional dhoti">
+							<div class="process_content">
+								<h3>Dhoti</h3>
+								<p>0 Items</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="single-process collection-card">
+							<img class="collection-image" src="img/collections/Maternity Wear.jpg" alt="Traditional maternity wear">
+							<div class="process_content">
+								<h3>Maternity Wear</h3>
+								<p>0 Items</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="single-process collection-card">
+							<img class="collection-image" src="img/collections/Running fabrics.jpg" alt="Running fabrics">
+							<div class="process_content">
+								<h3>Running Fabrics</h3>
+								<p>0 Items</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="single-process collection-card">
+							<img class="collection-image" src="img/collections/Jewellery.jpg" alt="Traditional jewellery">
+							<div class="process_content">
+								<h3>Jewellery</h3>
+								<p>0 Items</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="trending-products" class="row" style="margin-top: 40px;">
+					<div class="col-md-12 text-center">
+						<div class="section_title">
+							<span class="sub-title">Styles Everyone Loves</span>
+							<h2>Trending Products</h2>
+							<p>Discover our most popular designs loved for their elegance and comfort.</p>
+							<div class="divider"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row text-center">
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="product-grid">
+							<div class="product-image">
+								<a href="#"><img class="pic-1" src="img/home/kasavu-saree.jpg" alt="Kerala kasavu saree"><img class="pic-2" src="img/home/saree-orange.jpg" alt="Woman wearing a red and gold saree"></a>
+								<ul class="social"><li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li><li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li><li><a href="" data-tip="Add to Cart"><i class="ti-shopping-cart"></i></a></li></ul>
+							</div>
+							<div class="product-content">
+								<p class="trending-vendor">Vendor: Navaa Designs</p>
+								<h3 class="title"><a href="#">Silver black cotton settu mundu with tassels</a></h3>
+								<div class="price"><span class="trending-price-label">Regular price</span>Rs. 1,419.00</div>
+								<div class="trending-actions">
+									<a class="trending-quick-buy" href="">Quick buy</a>
+									<a class="trending-add-cart" href="">Add to cart</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="product-grid">
+							<div class="product-image">
+								<a href="#"><img class="pic-1" src="img/home/saree-green.jpg" alt="Woman wearing a green saree with jewelry"><img class="pic-2" src="img/home/saree-orange.jpg" alt="Woman wearing an orange saree"></a>
+								<ul class="social"><li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li><li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li><li><a href="" data-tip="Add to Cart"><i class="ti-shopping-cart"></i></a></li></ul>
+							</div>
+							<div class="product-content">
+								<p class="trending-vendor">Vendor: Navaa Designs</p>
+								<h3 class="title"><a href="#">Green silver cotton settu mundu with tassels</a></h3>
+								<div class="price"><span class="trending-price-label">Regular price</span>Rs. 1,419.00</div>
+								<div class="trending-actions">
+									<a class="trending-quick-buy" href="">Quick buy</a>
+									<a class="trending-add-cart" href="">Add to cart</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="product-grid">
+							<div class="product-image">
+								<a href="#"><img class="pic-1" src="img/home/saree-red.jpg" alt="Woman wearing a red bridal saree"><img class="pic-2" src="img/home/saree-blue.jpg" alt="Woman wearing a blue saree"></a>
+								<ul class="social"><li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li><li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li><li><a href="" data-tip="Add to Cart"><i class="ti-shopping-cart"></i></a></li></ul>
+							</div>
+							<div class="product-content">
+								<p class="trending-vendor">Vendor: Navaa Designs</p>
+								<h3 class="title"><a href="#">Balaramapuram Thulasi theertham settu mundu</a></h3>
+								<div class="price"><span class="trending-price-label">Regular price</span>Rs. 960.00</div>
+								<div class="trending-actions">
+									<a class="trending-quick-buy" href="">Quick buy</a>
+									<a class="trending-add-cart" href="">Add to cart</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="product-grid">
+							<div class="product-image">
+								<a href="#"><img class="pic-1" src="img/home/saree-walk.jpg" alt="Woman wearing a traditional saree"><img class="pic-2" src="img/home/saree-pattern.jpg" alt="Black and white traditional saree"></a>
+								<ul class="social"><li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li><li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li><li><a href="" data-tip="Add to Cart"><i class="ti-shopping-cart"></i></a></li></ul>
+							</div>
+							<div class="product-content">
+								<p class="trending-vendor">Vendor: Navaa Designs</p>
+								<h3 class="title"><a href="#">Balaramapuram cotton settu mundu</a></h3>
+								<div class="price"><span class="trending-price-label">Regular price</span>Rs. 860.00</div>
+								<div class="trending-actions">
+									<a class="trending-quick-buy" href="">Quick buy</a>
+									<a class="trending-add-cart" href="">Add to cart</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Why Choose Us -->
+		<div class="special_offer_area gray_section section_padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="section_title">
+							<h2>Why Choose Us</h2>
+							<div class="divider"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row text-center">
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="single-process">
+							<div class="picon"><i class="ti-check-box"></i></div>
+							<div class="process_content">
+								<h3>Quality Assurance</h3>
+								<p>Each product goes through a quality check to maintain high standards before reaching you.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="single-process">
+							<div class="picon"><i class="ti-layout-grid2"></i></div>
+							<div class="process_content">
+								<h3>Latest Designs</h3>
+								<p>Our collections are regularly updated with trendy and traditional designs to match your style.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="single-process">
+							<div class="picon"><i class="ti-headphone-alt"></i></div>
+							<div class="process_content">
+								<h3>Customer Support</h3>
+								<p>Our team is always ready to assist you with any queries or concerns.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="single-process">
+							<div class="picon"><i class="ti-medall"></i></div>
+							<div class="process_content">
+								<h3>Premium Quality Fabrics</h3>
+								<p>We use carefully selected fabrics to ensure comfort, durability, and a rich, elegant look in every piece.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="single-process">
+							<div class="picon"><i class="ti-shield"></i></div>
+							<div class="process_content">
+								<h3>Secure Payment</h3>
+								<p>Shop with confidence using our safe and secure payment methods designed to protect your transactions.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="single-process">
+							<div class="picon"><i class="ti-wallet"></i></div>
+							<div class="process_content">
+								<h3>Affordable Pricing</h3>
+								<p>Enjoy stylish and elegant collections at prices that suit every budget without compromising on quality.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="single-process">
+							<div class="picon"><i class="ti-layout-grid2"></i></div>
+							<div class="process_content">
+								<h3>Wide Range of Collections</h3>
+								<p>From sarees and settu mundu to salwar sets and co-ord styles, we offer something for every occasion.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="single-process">
+							<div class="picon"><i class="ti-truck"></i></div>
+							<div class="process_content">
+								<h3>Fast &amp; Reliable Delivery</h3>
+								<p>We ensure timely delivery so your favorite outfits reach you quickly and safely.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- End Why Choose Us -->
+
+		<!-- Start Featured product Area -->
+		<section id="featured_product" class="featured_product_area section_padding">
+			<div class="container">		
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="section_title">	
+							<span class="sub-title">Check Our Featured Products</span>
+							<h2>Featured Products</h2>
+							<div class="divider"></div>							
+						</div>
+					</div>
+				</div>
+
+				<div class="row text-center">					
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="product-grid">
+							<div class="product-image">
+								<a href="#">
+									<img class="pic-1" src="img/home/kasavu-saree.jpg" alt="Kerala kasavu saree">
+									<img class="pic-2" src="img/home/saree-orange.jpg" alt="Woman wearing an orange saree">
+								</a>
+								<ul class="social">
+									<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
+									<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
+									<li><a href="" data-tip="Add to Cart"><i class="ti-shopping-cart"></i></a></li>
+								</ul>
+								<span class="product-new-label">Sale</span>
+							</div>
+							<ul class="rating">
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+							</ul>
+							<div class="product-content">
+								<h3 class="title"><a href="#">Product Title</a></h3>
+								<div class="price">₹16.00
+									<span>₹20.00</span>
+								</div>
+								<a class="add-to-cart" href="">+ Add To Cart</a>
+							</div>
+						</div>
+					</div><!-- End Col -->	
+					
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="product-grid">
+							<div class="product-image">
+								<a href="#">
+									<img class="pic-1" src="img/home/saree-green.jpg" alt="Woman wearing a green saree">
+									<img class="pic-2" src="img/home/saree-walk.jpg" alt="Woman wearing a traditional saree">
+								</a>
+								<ul class="social">
+									<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
+									<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
+									<li><a href="" data-tip="Add to Cart"><i class="ti-shopping-cart"></i></a></li>
+								</ul>
+								<span class="product-new-label">-20%</span>				
+							</div>
+							<ul class="rating">
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+							</ul>
+							<div class="product-content">
+								<h3 class="title"><a href="#">Product Title</a></h3>
+								<div class="price">₹16.00
+									<span>₹20.00</span>
+								</div>
+								<a class="add-to-cart" href="">+ Add To Cart</a>
+							</div>
+						</div>
+					</div><!-- End Col -->	
+							
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="product-grid">
+							<div class="product-image">
+								<a href="#">
+									<img class="pic-1" src="img/home/bridal.jpg" alt="Woman wearing an ornate bridal saree">
+									<img class="pic-2" src="img/home/saree-blue.jpg" alt="Woman wearing a blue saree">
+								</a>
+								<ul class="social">
+									<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
+									<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
+									<li><a href="" data-tip="Add to Cart"><i class="ti-shopping-cart"></i></a></li>
+								</ul>
+								<span class="product-new-label">Sale</span>
+							</div>
+							<ul class="rating">
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star disable"></li>
+							</ul>
+							<div class="product-content">
+								<h3 class="title"><a href="#">Product Title</a></h3>
+								<div class="price">₹16.00
+									<span>₹20.00</span>
+								</div>
+								<a class="add-to-cart" href="">+ Add To Cart</a>
+							</div>
+						</div>
+					</div><!-- End Col -->	
+
+					
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="product-grid">
+							<div class="product-image">
+								<a href="#">
+									<img class="pic-1" src="img/home/saree-walk.jpg" alt="Woman wearing a traditional saree">
+									<img class="pic-2" src="img/home/saree-pattern.jpg" alt="Black and white traditional saree">
+								</a>
+								<ul class="social">
+									<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
+									<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
+									<li><a href="" data-tip="Add to Cart"><i class="ti-shopping-cart"></i></a></li>
+								</ul>
+								<span class="product-new-label">New</span>
+							</div>
+							<ul class="rating">
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+							</ul>
+							<div class="product-content">
+								<h3 class="title"><a href="#">Product Title</a></h3>
+								<div class="price">₹16.00
+									<span>₹20.00</span>
+								</div>
+								<a class="add-to-cart" href="">+ Add To Cart</a>
+							</div>
+						</div>
+					</div><!-- End Col -->			
+					
+					
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="product-grid">
+							<div class="product-image">
+								<a href="#">
+									<img class="pic-1" src="img/home/saree-orange.jpg" alt="Woman wearing an orange saree">
+									<img class="pic-2" src="img/home/saree-blue.jpg" alt="Woman wearing a blue saree">
+								</a>
+								<ul class="social">
+									<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
+									<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
+									<li><a href="" data-tip="Add to Cart"><i class="ti-shopping-cart"></i></a></li>
+								</ul>
+								<span class="product-new-label">Sale</span>
+							</div>
+							<ul class="rating">
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+							</ul>
+							<div class="product-content">
+								<h3 class="title"><a href="#">Product Title</a></h3>
+								<div class="price">₹16.00
+									<span>₹20.00</span>
+								</div>
+								<a class="add-to-cart" href="">+ Add To Cart</a>
+							</div>
+						</div>
+					</div><!-- End Col -->			
+					
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="product-grid">
+							<div class="product-image">
+								<a href="#">
+									<img class="pic-1" src="img/home/saree-blue.jpg" alt="Woman wearing a blue saree">
+									<img class="pic-2" src="img/home/saree-orange.jpg" alt="Woman wearing an orange saree">
+								</a>
+								<ul class="social">
+									<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
+									<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
+									<li><a href="" data-tip="Add to Cart"><i class="ti-shopping-cart"></i></a></li>
+								</ul>
+								<span class="product-new-label">-30%</span>
+							</div>
+							<ul class="rating">
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+							</ul>
+							<div class="product-content">
+								<h3 class="title"><a href="#">Product Title</a></h3>
+								<div class="price">₹16.00
+									<span>₹20.00</span>
+								</div>
+								<a class="add-to-cart" href="">+ Add To Cart</a>
+							</div>
+						</div>
+					</div><!-- End Col -->		
+					
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="product-grid">
+							<div class="product-image">
+								<a href="#">
+									<img class="pic-1" src="img/home/saree-pattern.jpg" alt="Traditional patterned saree">
+									<img class="pic-2" src="img/home/saree-pattern.jpg" alt="Black and white traditional saree">
+								</a>
+								<ul class="social">
+									<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
+									<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
+									<li><a href="" data-tip="Add to Cart"><i class="ti-shopping-cart"></i></a></li>
+								</ul>
+								<span class="product-new-label">Sale</span>
+							</div>
+							<ul class="rating">
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+							</ul>
+							<div class="product-content">
+								<h3 class="title"><a href="#">Product Title</a></h3>
+								<div class="price">₹16.00
+									<span>₹20.00</span>
+								</div>
+								<a class="add-to-cart" href="">+ Add To Cart</a>
+							</div>
+						</div>
+					</div><!-- End Col -->	
+
+					
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="product-grid">
+							<div class="product-image">
+								<a href="#">
+									<img class="pic-1" src="img/home/saree-red.jpg" alt="Woman wearing a red festive saree">
+									<img class="pic-2" src="img/home/kasavu-saree.jpg" alt="Kerala kasavu saree">
+								</a>
+								<ul class="social">
+									<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
+									<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
+									<li><a href="" data-tip="Add to Cart"><i class="ti-shopping-cart"></i></a></li>
+								</ul>
+								<span class="product-new-label">-50%</span>
+							</div>
+							<ul class="rating">
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+								<li class="fa fa-star"></li>
+							</ul>
+							<div class="product-content">
+								<h3 class="title"><a href="#">Product Title</a></h3>
+								<div class="price">₹16.00
+									<span>₹20.00</span>
+								</div>
+								<a class="add-to-cart" href="">+ Add To Cart</a>
+							</div>
+						</div>
+					</div><!-- End Col -->			
+				</div>
+			</div>
+		</section>
+		<!-- End Featured Products Area -->
+
+		<!-- Testimonials Area -->
+		<section id="testimonials" class="testimonials_area" style="background: url(img/home/fabric-stack.jpg); background-size: cover; background-attachment: fixed;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="section_title">
+							<span class="sub-title">The Navaa Difference</span>
+							<h2>A Promise in Every Thread</h2>
+							<div class="divider"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8 center-block">
+						<div id="testimonial-slider" class="owl-carousel text-center">
+							<div class="testimonial">
+								<div class="testimonial-content">
+									<p class="description">
+										We bring Kerala-inspired tradition and graceful patterns together for every generation.
+									</p>
+									<div class="test-bottom text-center">
+										<div class="test-des-area">
+											<h3 class="testimonial-title">Tradition with a modern touch</h3>
+											<small class="post">Navaa Designs</small>
+										</div>
+									</div>
+								</div>
+							</div>
+			 
+							<div class="testimonial">
+								<div class="testimonial-content">
+									<p class="description">
+										Discover sarees, settu mundu, dhotis and more for celebrations and everyday moments.
+									</p>
+									<div class="test-bottom text-center">
+										<div class="test-des-area">
+											<h3 class="testimonial-title">Elegance for every occasion</h3>
+											<small class="post">Navaa Designs</small>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							
+							<div class="testimonial">
+								<div class="testimonial-content">
+									<p class="description">
+										Explore timeless styles inspired by Kerala tradition, selected for comfort and everyday grace.
+									</p>
+									<div class="test-bottom text-center">
+										<div class="test-des-area">
+											<h3 class="testimonial-title">Comfort in every detail</h3>
+											<small class="post">Navaa Designs</small>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> <!-- End STestimonials Area -->		
+		
+        <!--  Blog -->
+        <section id="blog_area" class="section_padding">
+            <div class="container">	
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="section_title">	
+							<span class="sub-title">Latest News From Blog</span>
+							<h2>Our Blog</h2>
+							<div class="divider"></div>							
+						</div>
+					</div>
+				</div>			
+				
+				<div class="row">	
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="single_blog">
+							<div class="single_blog_img">
+								<img src="img/home/fabric-stack.jpg" alt="Colorful fabrics arranged together">
+							</div>
+							<div class="blog_content">
+								<h4 class="post_title"><a href="blog-details.html">Choosing Fabrics for Every Occasion</a></h4>
+								<p>Explore colors, textures, and patterns that make traditional dressing feel personal and comfortable.</p>
+							</div>
+						</div>
+					</div> <!--  End Col -->				
+					
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="single_blog">
+							<div class="single_blog_img">
+								<img src="img/home/saree-walk.jpg" alt="Woman wearing a traditional saree">
+							</div>
+							<div class="blog_content">
+								<h4 class="post_title"><a href="blog-details.html">The Timeless Beauty of Kerala Kasavu</a></h4>
+								<p>Discover the graceful white-and-gold look that brings Kerala tradition to festive moments.</p>
+							</div>
+						</div>
+					</div> <!--  End Col -->				
+					
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="single_blog">
+							<div class="single_blog_img">
+								<img src="img/home/jewellery.jpg" alt="Traditional gold jewellery">
+							</div>
+							<div class="blog_content">
+								<h4 class="post_title"><a href="blog-details.html">Pairing Traditional Jewellery with Ethnic Wear</a></h4>
+								<p>Bring a look together with thoughtful jewellery pairings for sarees and festive outfits.</p>
+							</div>
+						</div>
+					</div> <!--  End Col -->
+
+				</div>
+            </div>
+        </section>
+        <!--  Blog end -->
+		
+
+        <!--  Our story -->
+		<section id="brand_area" class="section_padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="section_title brand-story">
+							<span class="sub-title">The Navaa Designs Story</span>
+							<h2>Rooted in Tradition, Made for Today</h2>
+							<div class="divider"></div>
+							<p class="brand-story-copy">At Navaa Designs, we celebrate Kerala tradition through sarees, settu mundu, dhotis, and more. Discover timeless styles for special occasions and everyday moments.</p>
+							<a class="brand-story-link" href="#collections">Explore Our Collections</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+        <!--   Our story end  -->
+		
+        <!--  Process -->
+		<section class="process_area section_padding">
+			<div class="container">
+				<div class="row text-center">		
+					<div class="col-lg-3 col-md-6 col-sm-6">
+						<div class="single-process">
+							<!-- process Icon -->
+							<div class="picon"><i class="ti-truck"></i></div>
+							<!-- process Content -->
+							<div class="process_content">
+								<h3>Free Shipping</h3>
+								<p>Best Shipping Service</p>
+							</div>
+						</div>	
+					</div>	<!-- End Col -->				
+
+					<div class="col-lg-3 col-md-6 col-sm-6">
+						<div class="single-process">
+							<!-- process Icon -->
+							<div class="picon"><i class="ti-credit-card"></i></div>
+							<!-- process Content -->
+							<div class="process_content">
+								<h3>Cash On Delivery</h3>
+								<p>Fast Delivery Method</p>
+							</div>
+						</div>	
+					</div>	<!-- End Col -->				
+
+					<div class="col-lg-3 col-md-6 col-sm-6">
+						<div class="single-process">
+							<!-- process Icon -->
+							<div class="picon"><i class="ti-headphone-alt"></i></div>
+							<!-- process Content -->
+							<div class="process_content">
+								<h3>Support 24/7</h3>
+								<p>24 Hours a Day</p>
+							</div>
+						</div>	
+					</div>	<!-- End Col -->				
+
+					<div class="col-lg-3 col-md-6 col-sm-6">
+						<div class="single-process">
+							<!-- process Icon -->
+							<div class="picon"><i class="ti-alarm-clock"></i></div>
+							<!-- process Content -->
+							<div class="process_content">
+								<h3>30 Days Return</h3>
+								<p>Simply Return 30 Days</p>
+							</div>
+						</div>	
+					</div>	<!-- End Col -->
+					
+				</div>
+			</div>
+		</section>
+        <!--  End Process -->
+		
+		<!--  FOOTER START  -->
+		<footer class="footer_area">
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">				
+						<div class="col-lg-4 col-sm-6">
+							<div class="single_ftr footer-contact-info">
+								<h4 class="sf_title">Navaa Designs</h4>
+								<ul>
+									<li><i class="ti-location-pin"></i> ADAMS ARCADE, ELAMANNOOR P.O, MANGADU, ADOOR</li>
+									<li><i class="ti-mobile"></i> 9947406541</li>
+									<li><i class="ti-email"></i> navaadesigns25@gmail.com</li>
+								</ul>
+							</div>
+						</div> <!--  End Col -->
+						
+						<div class="col-lg-2 col-sm-6">
+							<div class="single_ftr">
+								<h4 class="sf_title">Useful links</h4>
+								<ul>
+									<li><a href="#modal" data-remodal-target="modal">Search</a></li>
+								</ul>
+							</div>
+						</div> <!--  End Col -->
+						
+						<div class="col-lg-2 col-sm-6">
+							<div class="single_ftr">
+								<h4 class="sf_title">Quick links</h4>
+								<ul>
+									<li><a href="index.html">Home Page</a></li>
+									<li><a href="shop.html">Products</a></li>
+									<li><a href="#collections">Collections</a></li>
+									<li><a href="contact.html">Contact</a></li>
+								</ul>
+							</div>
+						</div> <!--  End Col -->	
+						
+						<div class="col-lg-4 col-sm-6">
+							<div class="single_ftr">
+								<h4 class="sf_title">Follow Us</h4>
+								<div class="newsletter_form">
+									<p><a href="#" aria-label="Follow Navaa Designs on Instagram"><i class="fa fa-instagram"></i> Instagram</a></p>
+								</div>
+							</div>
+						</div> <!--  End Col -->
+						
+					</div>
+				</div>
+			</div>
+		
+		
+			<div class="ftr_btm_area">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="ftr_social_icon">
+								<ul>
+									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="col-sm-4">
+							<p class="copyright_text text-center">Designed By Cognetz</p>
+						</div>
+						
+						<div class="col-sm-4">
+							<div class="payment_mthd_icon text-right"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--  FOOTER END  -->
+
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.meanmenu.min.js"></script>
+		<script src="js/jquery.mixitup.js"></script>
+		<script src="js/jquery.counterup.min.js"></script>
+		<script src="js/remodal.js"></script>
+		<script src="js/waypoints.min.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/jquery.countdown.js"></script>
+		<script src="js/venobox.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/simplePlayer.js"></script>
+		<script src="js/scrolltopcontrol.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
