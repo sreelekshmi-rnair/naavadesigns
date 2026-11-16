@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html lang="en-US">
 	<head>
 		<meta charset="UTF-8">
@@ -14,23 +14,11 @@
 		<link rel="stylesheet" href="css/owl.theme.default.min.css" />
 		<link rel="stylesheet" href="css/owl.carousel.min.css" />
 		<link rel="stylesheet" href="css/meanmenu.min.css" />
-		<link rel="stylesheet" href="css/remodal.css" />
-		<link rel="stylesheet" href="css/remodal-default-theme.css" />
 		<link rel="stylesheet" href="css/venobox.css" />
 		<link rel="stylesheet" href="css/bootstrap.min.css" />	
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/responsive.css" />	
 		<style>
-			#header_area .main-menu nav > ul > li:nth-child(n+4):not(:last-child),
-			#header_area .mobile-menu nav > ul > li:nth-child(n+4):not(:last-child),
-			#header_area .main-menu nav > ul > li > ul,
-			#header_area .main-menu nav > ul > li > .mega-menu,
-			#header_area .mobile-menu nav > ul > li > ul,
-			#header_area .mean-nav > ul > li:nth-child(n+4):not(:last-child),
-			#header_area .mean-nav > ul > li > ul,
-			#header_area .mean-nav > ul > li > a.mean-expand {
-				display: none;
-			}
 			#header_area .logo img {
 				display: block;
 				width: 120px;
@@ -42,106 +30,7 @@
 					width: 100px;
 				}
 			}
-			#trending-products + .row .product-image {
-				background: #f3eee7;
-			}
-			#trending-products + .row .product-grid {
-				display: flex;
-				flex-direction: column;
-				padding: 0;
-				overflow: hidden;
-				border: 1px solid #e8e1d8;
-				border-radius: 10px;
-				background: #fff;
-				box-shadow: 0 5px 18px rgba(51, 38, 28, 0.07);
-				transition: box-shadow 0.2s ease, transform 0.2s ease;
-			}
-			#trending-products + .row .product-grid:hover {
-				transform: translateY(-3px);
-				box-shadow: 0 10px 24px rgba(51, 38, 28, 0.12);
-			}
-			#trending-products + .row .product-image {
-				aspect-ratio: 4 / 5;
-				overflow: hidden;
-			}
-			#trending-products + .row .product-image > a {
-				height: 100%;
-			}
-			#trending-products + .row .product-image img {
-				display: block;
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-			}
-			#trending-products + .row .product-content {
-				position: static;
-				display: flex;
-				flex: 0 0 auto;
-				flex-direction: column;
-				align-items: stretch;
-				margin: 0;
-				padding: 14px;
-				text-align: left;
-			}
-			#trending-products + .row .trending-vendor {
-				margin: 0 0 8px;
-				color: #887b6f;
-				font-size: 11px;
-				font-weight: 600;
-				letter-spacing: 0.07em;
-				line-height: 1.3;
-				text-transform: uppercase;
-			}
-			#trending-products + .row .product-content .title {
-				display: flex;
-				min-height: 60px;
-				align-items: flex-start;
-				margin: 0 0 10px;
-				font-size: 15px;
-				font-weight: 600;
-				line-height: 1.4;
-			}
-			#trending-products + .row .product-content .title a {
-				color: #332b25;
-			}
-			#trending-products + .row .product-content .price {
-				margin: 0 0 12px;
-				color: var(--navaa-gold-dark);
-				font-size: 18px;
-				font-weight: 700;
-				line-height: 1.3;
-				text-align: left;
-			}
-			#trending-products + .row .trending-price-label {
-				display: block;
-				margin: 0;
-				color: #887b6f;
-				font-size: 12px;
-				font-weight: 400;
-				line-height: 1.2;
-				text-decoration: none;
-			}
-			#trending-products + .row .trending-actions {
-				display: grid;
-				grid-template-columns: 1fr;
-				gap: 8px;
-				margin-top: 8px;
-			}
-			#trending-products + .row .trending-actions a {
-				display: flex;
-				min-height: 38px;
-				align-items: center;
-				justify-content: center;
-				padding: 7px;
-				border: 1px solid var(--navaa-gold-dark);
-				border-radius: 4px;
-				color: var(--navaa-gold-dark);
-				font-size: 12px;
-				font-weight: 600;
-				line-height: 1.2;
-				text-align: center;
-				text-decoration: none;
-			}
+
 			#collections .collection-card {
 				padding: 0 !important;
 				min-height: 0 !important;
@@ -180,6 +69,7 @@
 				padding: 4px 10px;
 				border-radius: 999px;
 				background: #f5f1eb;
+				color: var(--navaa-muted);
 				color: #756452;
 				font-size: 12px;
 				letter-spacing: 0.04em;
@@ -248,9 +138,6 @@
 			#header_area .header_btm_area {
 				background: #fff;
 			}
-			#header_area .hdr_tp_right li span {
-				color: inherit;
-			}
 			#header_area .main-menu nav > ul > li > a {
 				font-weight: 600;
 				letter-spacing: 0.04em;
@@ -271,12 +158,6 @@
 				max-width: 620px;
 				line-height: 1.7;
 				text-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
-			}
-			#slider_area .slider_content .main_btn {
-				padding: 12px 24px;
-				border-radius: 4px;
-				font-weight: 600;
-				letter-spacing: 0.03em;
 			}
 			.section_padding {
 				padding-top: 72px;
@@ -394,6 +275,242 @@
 				color: var(--navaa-gold-dark);
 				text-align: left;
 			}
+			#trending-products + .row {
+				display: flex;
+				flex-wrap: wrap;
+			}
+			#trending-products + .row > [class*="col-"] {
+				display: flex;
+				margin-bottom: 24px;
+			}
+			#trending-products + .row .product-grid {
+				width: 100%;
+				height: 100%;
+			}
+			#trending-products + .row .product-image {
+				background: #f3eee7;
+			}
+			#trending-products + .row .product-grid {
+				display: flex;
+				flex-direction: column;
+				padding: 0;
+				overflow: hidden;
+				border: 1px solid #e8e1d8;
+				border-radius: 10px;
+				background: #fff;
+				box-shadow: 0 5px 18px rgba(51, 38, 28, 0.07);
+				transition: box-shadow 0.2s ease, transform 0.2s ease;
+			}
+			#trending-products + .row .product-grid:hover {
+				transform: translateY(-3px);
+				box-shadow: 0 10px 24px rgba(51, 38, 28, 0.12);
+			}
+			#trending-products + .row .product-image {
+				aspect-ratio: 4 / 5;
+				overflow: hidden;
+			}
+			#trending-products + .row .product-image > a {
+				height: 100%;
+			}
+			#trending-products + .row .product-image img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			#trending-products + .row .product-content {
+				position: static;
+				display: flex;
+				flex: 0 0 auto;
+				flex-direction: column;
+				align-items: stretch;
+				margin: 0;
+				padding: 14px;
+				text-align: left;
+			}
+			#trending-products + .row .trending-vendor {
+				margin: 0 0 8px;
+				color: #887b6f;
+				font-size: 11px;
+				font-weight: 600;
+				letter-spacing: 0.07em;
+				line-height: 1.3;
+				text-transform: uppercase;
+			}
+			#trending-products + .row .product-content .title {
+				display: flex;
+				min-height: 60px;
+				align-items: flex-start;
+				margin: 0 0 10px;
+				font-size: 15px;
+				font-weight: 600;
+				line-height: 1.4;
+			}
+			#trending-products + .row .product-content .title a {
+				color: #332b25;
+			}
+			#trending-products + .row .product-content .price {
+				margin: 0 0 12px;
+				color: var(--navaa-gold-dark);
+				font-size: 18px;
+				font-weight: 700;
+				line-height: 1.3;
+				text-align: left;
+			}
+			#trending-products + .row .trending-price-label {
+				display: block;
+				margin: 0;
+				color: #887b6f;
+				font-size: 12px;
+				font-weight: 400;
+				line-height: 1.2;
+				text-decoration: none;
+			}
+			#featured_product .container > .row.text-center {
+				display: flex;
+				flex-wrap: wrap;
+			}
+			#featured_product .container > .row.text-center > [class*="col-"] {
+				display: flex;
+				margin-bottom: 24px;
+			}
+			.product-grid .product-image {
+				position: relative;
+			}
+			.product-grid .quick-view-button {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				z-index: 4;
+				display: flex;
+				width: 48px;
+				height: 48px;
+				align-items: center;
+				justify-content: center;
+				padding: 0;
+				border: 0;
+				border-radius: 50%;
+				background: var(--navaa-accent);
+				color: #fff;
+				cursor: pointer;
+				opacity: 0;
+				transform: translate(-50%, -40%);
+				transition: opacity 0.2s ease, transform 0.2s ease;
+			}
+			.product-grid:hover .quick-view-button,
+			.product-grid:focus-within .quick-view-button {
+				opacity: 1;
+				transform: translate(-50%, -50%);
+			}
+			.product-grid .quick-view-button i {
+				font-size: 20px;
+			}
+			.product-grid .quick-view-button::before,
+			.product-grid .quick-view-button::after {
+				position: absolute;
+				left: 50%;
+				opacity: 0;
+				pointer-events: none;
+				transition: opacity 0.15s ease;
+			}
+			.product-grid .quick-view-button::before {
+				bottom: calc(100% + 10px);
+				padding: 3px 8px;
+				background: #111;
+				color: #fff;
+				content: "Quick View";
+				font-size: 12px;
+				letter-spacing: 0.05em;
+				line-height: 1.5;
+				white-space: nowrap;
+				transform: translateX(-50%);
+			}
+			.product-grid .quick-view-button::after {
+				bottom: calc(100% + 4px);
+				width: 10px;
+				height: 10px;
+				background: #111;
+				content: "";
+				transform: translateX(-50%) rotate(45deg);
+			}
+			.product-grid .quick-view-button:hover::before,
+			.product-grid .quick-view-button:hover::after,
+			.product-grid .quick-view-button:focus-visible::before,
+			.product-grid .quick-view-button:focus-visible::after {
+				opacity: 1;
+			}
+			#quick-view-dialog {
+				width: min(900px, calc(100% - 32px));
+				max-width: 900px;
+				padding: 0;
+				overflow: visible;
+				border: 0;
+				border-radius: 10px;
+				box-shadow: 0 20px 70px rgba(0, 0, 0, 0.3);
+			}
+			#quick-view-dialog::backdrop {
+				background: rgba(15, 12, 9, 0.65);
+			}
+			.quick-view-content {
+				display: grid;
+				grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+				gap: 28px;
+				align-items: center;
+				padding: 32px;
+			}
+			.quick-view-content img {
+				display: block;
+				width: 100%;
+				max-height: 70vh;
+				border-radius: 6px;
+				background: #f3eee7;
+				object-fit: contain;
+			}
+			.quick-view-details h2 {
+				margin: 0 0 16px;
+				color: var(--navaa-ink);
+				font-size: 24px;
+				line-height: 1.35;
+			}
+			.quick-view-details p {
+				margin: 0;
+				color: var(--navaa-gold-dark);
+				font-size: 20px;
+				font-weight: 700;
+			}
+			.quick-view-close {
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				z-index: 1;
+				width: 38px;
+				height: 38px;
+				border: 0;
+				border-radius: 50%;
+				background: #fff;
+				color: var(--navaa-ink);
+				font-size: 26px;
+				line-height: 1;
+			}
+			@media (hover: none) {
+				.product-grid .quick-view-button {
+					opacity: 1;
+					transform: translate(-50%, -50%);
+				}
+			}
+			@media (max-width: 600px) {
+				.quick-view-content {
+					grid-template-columns: 1fr;
+					gap: 18px;
+					padding: 20px;
+				}
+				.quick-view-content img {
+					max-height: 48vh;
+				}
+				.quick-view-details h2 {
+					font-size: 20px;
+				}
+			}
 			#collections .collection-card {
 				height: calc(100% - 24px);
 				margin-bottom: 24px;
@@ -408,18 +525,7 @@
 			#collections .collection-card h3 {
 				color: var(--navaa-ink);
 			}
-			#trending-products + .row {
-				display: flex;
-				flex-wrap: wrap;
-			}
-			#trending-products + .row > [class*="col-"] {
-				display: flex;
-				margin-bottom: 24px;
-			}
-			#trending-products + .row .product-grid {
-				width: 100%;
-				height: 100%;
-			}
+
 			.special_offer_area .row.text-center {
 				display: flex;
 				flex-wrap: wrap;
@@ -460,14 +566,7 @@
 			.special_offer_area .single-process .picon i {
 				font-size: 23px;
 			}
-			#featured_product .container > .row.text-center {
-				display: flex;
-				flex-wrap: wrap;
-			}
-			#featured_product .container > .row.text-center > [class*="col-"] {
-				display: flex;
-				margin-bottom: 24px;
-			}
+
 			#testimonials {
 				background-position: center;
 			}
@@ -524,7 +623,7 @@
 			}
 			#blog_area .single_blog .blog_content p {
 				margin: 0;
-				color: var(--navaa-muted);
+
 				line-height: 1.7;
 			}
 			.process_area .single-process {
@@ -545,8 +644,7 @@
 				}
 				#promo_area .single_promo .promo-content,
 				#promo_area .single_promo .post,
-				#promo_area .single_promo .box-content p,
-				#promo_area .single_promo .shop_now_btn {
+				#promo_area .single_promo .box-content p {
 					opacity: 1;
 				}
 			}
@@ -571,23 +669,8 @@
 					align-items: center;
 				}
 				#header_area .header_top_area .container > .row > div:first-child {
-					flex: 0 0 66%;
-					max-width: 66%;
-				}
-				#header_area .header_top_area .container > .row > div:last-child {
-					flex: 0 0 34%;
-					max-width: 34%;
-				}
-				#header_area .hdr_tp_right {
-					margin: 0;
-					text-align: right;
-				}
-				#header_area .hdr_tp_right > li {
-					padding: 0;
-					white-space: nowrap;
-				}
-				#header_area .hdr_tp_right a {
-					font-size: 12px;
+					flex: 0 0 100%;
+					max-width: 100%;
 				}
 				#header_area .header_btm_area {
 					padding: 10px 0 0;
@@ -604,34 +687,12 @@
 					max-width: 50%;
 				}
 				#header_area .header_btm_area > .container > .row > div:nth-child(2) {
-					order: 3;
-					flex: 0 0 44px;
-					max-width: 44px;
-					text-align: left;
-				}
-				#header_area .header_btm_area > .container > .row > div:nth-child(3) {
 					order: 2;
 					flex: 1 1 0;
 					max-width: none;
 				}
-				#header_area .header_btm_area .menu_wrap,
-				#header_area .header_btm_area .right_menu {
+				#header_area .header_btm_area .menu_wrap {
 					margin-top: 0;
-				}
-				#header_area .header_btm_area .right_menu {
-					float: none;
-					text-align: right;
-				}
-				#header_area .header_btm_area .right_menu > ul {
-					display: inline-flex;
-					align-items: center;
-					margin: 0;
-				}
-				#header_area .header_btm_area .search_icon {
-					padding-right: 6px;
-				}
-				#header_area .header_btm_area .cart_icon {
-					padding-bottom: 0;
 				}
 				#header_area .header_btm_area .mean-container {
 					position: static;
@@ -704,13 +765,6 @@
 				#slider_area .slider_content h4 {
 					font-size: 14px;
 				}
-				#product_area .product_filter ul {
-					margin-bottom: 24px;
-				}
-				#product_area .product_filter ul li {
-					padding: 9px 14px;
-					font-size: 12px;
-				}
 				#collections .container > .row:nth-child(3) > [class*="col-"],
 				#product_area .product_item .row > .mix,
 				#trending-products + .row > [class*="col-"],
@@ -752,12 +806,8 @@
 			}
 			@media (max-width: 359px) {
 				#header_area .header_top_area .container > .row > div:first-child {
-					flex-basis: 60%;
-					max-width: 60%;
-				}
-				#header_area .header_top_area .container > .row > div:last-child {
-					flex-basis: 40%;
-					max-width: 40%;
+					flex-basis: 100%;
+					max-width: 100%;
 				}
 			}
 			@media (max-width: 480px) {
@@ -794,7 +844,7 @@
 			<div class="header_top_area">
 				<div class="container">
 					<div class="row">
-						<div class="col-xs-12 col-sm-6">
+						<div class="col-xs-12 col-sm-12">
 							<div class="hdr_tp_left">
 								<div class="call_area">
 									<span class="single_con_add"><i class="ti-mobile"></i> 9947406541</span>
@@ -802,255 +852,44 @@
 								</div>
 							</div>
 						</div>
-						
-						<div class="col-xs-12 col-sm-6">
-			
-							<ul class="hdr_tp_right text-right">
-								<li class="account_area"><a href="login.html"><i class="ti-user"></i> My Account</a></li>
-							</ul>
-						</div>
 					</div>
 				</div>
 			</div> <!--  HEADER START  -->
-			
+
 			<div class="header_btm_area">
 				<div class="container">
-					<div class="row">		
-						<div class="col-xs-12 col-sm-12 col-md-3"> 
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-3">
 							<a class="logo" href="index.html"><img src="img/logo.jpg" alt="Navaa Designs"></a>
 						</div><!--  End Col -->
-						
-						<div class="col-xs-12 col-sm-12 col-md-7 text-center">
+
+						<div class="col-xs-12 col-sm-12 col-md-9 text-center">
 							<div class="menu_wrap">
 								<div class="main-menu">
 									<nav>
 										<ul>
-											<li><a href="index.html">Home</a>
-											</li>									
-											
-											<li><a href="shop.html">Products</a>
-												<!-- Sub Menu -->
-												<ul class="sub-menu">
-													<li><a href="product-details.html">Product Details</a></li>
-													<li><a href="cart.html">Cart</a></li>
-													<li><a href="checkout.html">Checkout</a></li>
-													<li><a href="wishlist.html">Wishlist</a></li>
-													<li><a href="account.html">Account</a></li>
-												</ul>
-											</li>
-											<li><a href="#collections">Collections</a>
-												<!-- Mega Menu -->
-												<div class="mega-menu mm-4-column mm-left">
-													<div class="mm-column mm-column-link float-left">
-														<h3>Men</h3>
-														<a href="#">Blazers</a>
-														<a href="#">Jackets</a>
-														<a href="#">Collections</a>
-														<a href="#">T-Shirts</a>
-														<a href="#">jens pant’s</a>
-														<a href="#">sports shoes</a>												
-													</div>
-													
-													<div class="mm-column mm-column-link float-left">
-														<h3>Women</h3>
-														<a href="#">Blazers</a>
-														<a href="#">Jackets</a>
-														<a href="#">Collections</a>
-														<a href="#">T-Shirts</a>
-														<a href="#">jens pant’s</a>
-														<a href="#">sports shoes</a>												
-													</div>
-													
-													<div class="mm-column mm-column-link float-left">
-														<h3>Jackets</h3>
-														<a href="#">Blazers</a>
-														<a href="#">Jackets</a>
-														<a href="#">Collections</a>
-														<a href="#">T-Shirts</a>
-														<a href="#">jens pant’s</a>
-														<a href="#">sports shoes</a>	
-													</div>						
-
-													<div class="mm-column mm-column-link float-left">
-														<h3>jens pant’s</h3>
-														<a href="#">Blazers</a>
-														<a href="#">Jackets</a>
-														<a href="#">Collections</a>
-														<a href="#">T-Shirts</a>
-														<a href="#">jens pant’s</a>
-														<a href="#">sports shoes</a>	
-													</div>
-
-												</div>
-											</li>
-											<li><a href="#">Women <i class="fa fa-angle-down"></i></a>
-												<!-- Mega Menu -->
-												<div class="mega-menu mm-3-column mm-left">
-													<div class="mm-column mm-column-link float-left">
-														<h3>Woment</h3>
-														<a href="#">Blazers</a>
-														<a href="#">Jackets</a>
-														<a href="#">Collections</a>
-														<a href="#">T-Shirts</a>
-														<a href="#">jens pant’s</a>
-														<a href="#">sports shoes</a>	
-													</div>
-													
-													<div class="mm-column mm-column-link float-left">
-														<h3>T-Shirts</h3>
-														<a href="#">Blazers</a>
-														<a href="#">Jackets</a>
-														<a href="#">Collections</a>
-														<a href="#">T-Shirts</a>
-														<a href="#">jens pant’s</a>
-														<a href="#">sports shoes</a>	
-													</div>					
-
-													<div class="mm-column mm-column-link float-left">
-														<h3>Jackets</h3>
-														<a href="#">Blazers</a>
-														<a href="#">Jackets</a>
-														<a href="#">Collections</a>
-														<a href="#">T-Shirts</a>
-														<a href="#">jens pant’s</a>
-														<a href="#">sports shoes</a>	
-													</div>												
-				
-												</div>
-											</li>
-											
-											<li><a href="#">pages <i class="fa fa-angle-down"></i></a>
-												<!-- Sub Menu -->
-												<ul class="sub-menu">
-													<li><a href="left-sidebar-blog.html">Left Sidebar Blog</a></li>
-													<li><a href="right-sidebar-blog.html">Right Sidebar Blog</a></li>
-													<li><a href="full-width-blog.html">Full Width Blog</a></li>
-													<li><a href="blog-details.html">Blog Details</a></li>
-													<li><a href="about-us.html">About Us</a></li>
-													<li><a href="contact.html">Contact Us</a></li>
-													<li><a href="404.html">404 Page</a></li>
-												</ul>
-											</li>
-											<li><a href="contact.html">Contact</a></li>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="#collections">Collections</a></li>
+											<li><a href="#brand_area">Our Story</a></li>
+											<li><a href="#blog_area">Journal</a></li>
+											<li><a href="#contact">Contact</a></li>
 										</ul>
 									</nav>
-								</div> <!--  End Main Menu -->					
+								</div> <!--  End Main Menu -->
 
-								<div class="mobile-menu text-right ">
+								<div class="mobile-menu text-right">
 									<nav>
 										<ul>
-											<li><a href="index.html">Home</a>																				</li>
-											<li><a href="shop.html">Products</a>
-												<!-- Sub Menu -->
-												<ul>
-													<li><a href="product-details.html">Product Details</a></li>
-													<li><a href="cart.html">Cart</a></li>
-													<li><a href="checkout.html">Checkout</a></li>
-													<li><a href="wishlist.html">Wishlist</a></li>
-												</ul>
-											</li>
-											<li><a href="#collections">Collections</a>																		
-												<ul>
-													<li><a href="#">Blazers</a></li>
-													<li><a href="#">Jackets</a></li>
-													<li><a href="#">Collections</a></li>
-													<li><a href="#">T-Shirts</a></li>
-													<li><a href="#">jens pant’s</a></li>
-													<li><a href="#">sports shoes</a></li>
-												</ul>																				
-											</li>
-											
-											<li><a href="#">Women</a>
-												<ul>
-													<li><a href="#">gagets</a></li>
-													<li><a href="#">laptop</a></li>
-													<li><a href="#">mobile</a></li>
-													<li><a href="#">lifestyle</a></li>
-													<li><a href="#">jens pant’s</a></li>
-													<li><a href="#">sports items</a></li>
-												</ul>
-											</li>
-										
-											<li><a href="#">pages</a>											
-												<ul>
-													<li><a href="blog.html">Blog</a></li>
-													<li><a href="blog-details.html">Blog Details</a></li>
-													<li><a href="about-us.html">About Us</a></li>
-													<li><a href="contact.html">Contact Us</a></li>
-													<li><a href="404.html">404 Page</a></li>
-												</ul>
-											</li>
-											<li><a href="contact.html">Contact</a></li>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="#collections">Collections</a></li>
+											<li><a href="#brand_area">Our Story</a></li>
+											<li><a href="#blog_area">Journal</a></li>
+											<li><a href="#contact">Contact</a></li>
 										</ul>
 									</nav>
-								</div> <!--  End mobile-menu -->						
+								</div> <!--  End mobile-menu -->
 							</div>
-						</div><!--  End Col -->		
-
-						<div class="col-xs-12 col-sm-12 col-md-2">
-							<div class="right_menu pull-right">
-								<ul class="nav">
-									<li>
-										<div class="search_icon">
-											<a href="#modal" data-remodal-target="modal"><i class="ti-search search_btn"></i></a>
-											
-											<div class="search-box remodal" data-remodal-id="modal">
-												<button data-remodal-action="close" class="remodal-close"></button>
-												<form action="#" method="Post">
-													<div class="input-group">
-														<input type="search" class="form-control" placeholder="Search products" aria-label="Search products"/>				
-														<button type="submit" class="btn btn-default"><i class="ti-search"></i></button>			
-													</div>
-												</form>
-											</div>
-										</div>
-									</li>
-									
-									<li>
-										<div class="cart_menu_area">
-											<div class="cart_icon">
-												<a href="#"><i class="ti-shopping-cart-full" aria-hidden="true"></i></a>
-												<span class="cart_number">2</span>
-											</div>
-											
-											
-											<!-- Mini Cart Wrapper -->
-											<div class="mini-cart-wrapper">
-												<!-- Product List -->
-												<div class="mc-pro-list fix">
-													<div class="mc-sin-pro fix">
-														<a href="#" class="mc-pro-image float-left"><img src="img/home/saree-green.jpg" alt="Green traditional saree" /></a>
-														<div class="mc-pro-details fix">
-															<a href="#">This is Product Name</a>
-															<span>1x₹25.00</span>
-															<a class="pro-del" href="#"><i class="fa fa-times-circle"></i></a>
-														</div>
-													</div>
-													<div class="mc-sin-pro fix">
-														<a href="#" class="mc-pro-image float-left"><img src="img/home/kasavu-saree.jpg" alt="Kerala kasavu saree" /></a>
-														<div class="mc-pro-details fix">
-															<a href="#">This is Product Name</a>
-															<span>1x₹25.00</span>
-															<a class="pro-del" href="#"><i class="fa fa-times-circle"></i></a>
-														</div>
-													</div>
-												</div>
-												<!-- Sub Total -->
-												<div class="mc-subtotal fix">
-													<h4>Subtotal <span>₹50.00</span></h4>												
-												</div>
-												<!-- Cart Button -->
-												<div class="mc-button">
-													<a href="#" class="checkout_btn">checkout</a>
-												</div>
-											</div>											
-										</div>	
-										
-									</li>
-								</ul>
-							</div>	
-						</div><!--  End Col -->	
-						
+						</div><!--  End Col -->
 					</div>
 				</div>
 			</div>
@@ -1069,7 +908,6 @@
 									<p class="animated">Navaa Designs</p>
 									<h1 class="animated">Grace in Every Thread</h1>
 									<h4 class="animated">Explore a variety of fabrics and patterns designed to bring style, comfort, and tradition together.</h4>
-									<a href="shop.html" class="btn main_btn animated">Shop Now</a>
 								</div>
 							</div>
 						</div>						
@@ -1084,7 +922,6 @@
 									<p class="animated">Traditional Elegance</p>
 									<h1 class="animated">Classic Ethnic Wear for Every Woman</h1>
 									<h4 class="animated">Celebrate special occasions or everyday moments with our carefully curated ethnic wear collections.</h4>
-									<a href="shop.html" class="btn main_btn animated">Shop Now</a>
 								</div>
 							</div>
 						</div>	
@@ -1099,7 +936,6 @@
 									<p class="animated">Kerala Inspired</p>
 									<h1 class="animated">Where Tradition Meets Everyday Elegance</h1>
 									<h4 class="animated">Experience the beauty of rich fabrics, elegant patterns, and timeless styles inspired by Kerala tradition.</h4>
-									<a href="shop.html" class="btn main_btn animated">Shop Now</a>
 								</div>
 							</div>
 						</div>
@@ -1121,7 +957,6 @@
 									<h3 class="title">Sarees</h3>
 									<span class="post">Traditional Collections</span>
 									<p>Timeless styles for every celebration</p>
-									<a class="shop_now_btn" href="shop.html">Shop Now</a>
 								</div>
 							</div>
 						</div>													
@@ -1135,7 +970,6 @@
 									<h3 class="title">Settu Mundu</h3>
 									<span class="post">Kerala Tradition</span>
 									<p>Elegant weaves for every occasion</p>
-									<a class="shop_now_btn" href="shop.html">Shop Now</a>
 								</div>
 							</div>
 						</div>														
@@ -1149,7 +983,6 @@
 									<h3 class="title">Jewellery</h3>
 									<span class="post">Festive Finishing Touches</span>
 									<p>Complete your look with a touch of tradition</p>
-									<a class="shop_now_btn" href="shop.html">Shop Now</a>
 								</div>
 							</div>
 						</div>									
@@ -1160,14 +993,18 @@
 		<!--  Promo ITEM END -->	
 		
 
-		<!-- Start product Area -->
+
+
+
+
+<!-- Start product Area -->
 		<section id="product_area" class="section_padding">
 			<div class="container">		
 				<div class="row">
 					<div class="col-md-12 text-center">
 						<div class="section_title">	
 							<span class="sub-title">Elegant • Traditional • Modern</span>
-							<h2>Shop Our Products</h2>
+							<h2>Our Designs</h2>
 							<div class="divider"></div>							
 						</div>
 					</div>
@@ -1192,10 +1029,6 @@
 											<img class="pic-1" src="img/home/saree-red.jpg" alt="Woman wearing a red festive saree">
 											<img class="pic-2" src="img/home/saree-orange.jpg" alt="Woman wearing an orange saree">
 										</a>
-										<ul class="social">
-											<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
-											<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
-										</ul>
 										<span class="product-new-label">Sale</span>
 									</div>
 									<ul class="rating">
@@ -1221,10 +1054,6 @@
 											<img class="pic-1" src="img/home/saree-green.jpg" alt="Woman wearing a green saree">
 											<img class="pic-2" src="img/home/saree-blue.jpg" alt="Woman wearing a blue saree">
 										</a>
-										<ul class="social">
-											<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
-											<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
-										</ul>
 										<span class="product-new-label">-20%</span>				
 									</div>
 									<ul class="rating">
@@ -1250,10 +1079,6 @@
 											<img class="pic-1" src="img/home/bridal.jpg" alt="Woman wearing an ornate bridal saree">
 											<img class="pic-2" src="img/home/saree-blue.jpg" alt="Woman wearing a blue saree">
 										</a>
-										<ul class="social">
-											<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
-											<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
-										</ul>
 										<span class="product-new-label">Sale</span>
 									</div>
 									<ul class="rating">
@@ -1280,10 +1105,6 @@
 											<img class="pic-1" src="img/home/saree-walk.jpg" alt="Woman wearing a traditional saree">
 											<img class="pic-2" src="img/home/saree-pattern.jpg" alt="Black and white traditional saree">
 										</a>
-										<ul class="social">
-											<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
-											<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
-										</ul>
 										<span class="product-new-label">New</span>
 									</div>
 									<ul class="rating">
@@ -1310,10 +1131,6 @@
 											<img class="pic-1" src="img/home/kasavu-saree.jpg" alt="Kerala kasavu saree">
 											<img class="pic-2" src="img/home/saree-blue.jpg" alt="Woman wearing a blue saree">
 										</a>
-										<ul class="social">
-											<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
-											<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
-										</ul>
 										<span class="product-new-label">Sale</span>
 									</div>
 									<ul class="rating">
@@ -1339,10 +1156,6 @@
 											<img class="pic-1" src="img/home/saree-blue.jpg" alt="Woman wearing a blue saree">
 											<img class="pic-2" src="img/home/saree-orange.jpg" alt="Woman wearing an orange saree">
 										</a>
-										<ul class="social">
-											<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
-											<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
-										</ul>
 										<span class="product-new-label">-30%</span>
 									</div>
 									<ul class="rating">
@@ -1368,10 +1181,6 @@
 											<img class="pic-1" src="img/home/saree-orange.jpg" alt="Woman wearing an orange saree">
 											<img class="pic-2" src="img/home/saree-pattern.jpg" alt="Black and white traditional saree">
 										</a>
-										<ul class="social">
-											<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
-											<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
-										</ul>
 										<span class="product-new-label">Sale</span>
 									</div>
 									<ul class="rating">
@@ -1398,10 +1207,6 @@
 											<img class="pic-1" src="img/home/saree-pattern.jpg" alt="Traditional patterned saree">
 											<img class="pic-2" src="img/home/saree-pattern.jpg" alt="Black and white traditional saree">
 										</a>
-										<ul class="social">
-											<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
-											<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
-										</ul>
 										<span class="product-new-label">-50%</span>
 									</div>
 									<ul class="rating">
@@ -1425,9 +1230,7 @@
 				</div>
 			</div>
 		</section>
-		<!-- End product Area -->
-
-
+		<!-- End product showcase -->
 		<section id="collections" class="section_padding" style="background: #f8f6f2;">
 			<div class="container">
 				<div class="row">
@@ -1562,15 +1365,11 @@
 						<div class="product-grid">
 							<div class="product-image">
 								<a href="#"><img class="pic-1" src="img/home/kasavu-saree.jpg" alt="Kerala kasavu saree"><img class="pic-2" src="img/home/saree-orange.jpg" alt="Woman wearing a red and gold saree"></a>
-								<ul class="social"><li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li><li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li></ul>
 							</div>
 							<div class="product-content">
 								<p class="trending-vendor">Vendor: Navaa Designs</p>
 								<h3 class="title"><a href="#">Silver black cotton settu mundu with tassels</a></h3>
 								<div class="price"><span class="trending-price-label">Regular price</span>Rs. 1,419.00</div>
-								<div class="trending-actions">
-									<a class="trending-quick-buy" href="">Quick buy</a>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -1578,15 +1377,11 @@
 						<div class="product-grid">
 							<div class="product-image">
 								<a href="#"><img class="pic-1" src="img/home/saree-green.jpg" alt="Woman wearing a green saree with jewelry"><img class="pic-2" src="img/home/saree-orange.jpg" alt="Woman wearing an orange saree"></a>
-								<ul class="social"><li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li><li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li></ul>
 							</div>
 							<div class="product-content">
 								<p class="trending-vendor">Vendor: Navaa Designs</p>
 								<h3 class="title"><a href="#">Green silver cotton settu mundu with tassels</a></h3>
 								<div class="price"><span class="trending-price-label">Regular price</span>Rs. 1,419.00</div>
-								<div class="trending-actions">
-									<a class="trending-quick-buy" href="">Quick buy</a>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -1594,15 +1389,11 @@
 						<div class="product-grid">
 							<div class="product-image">
 								<a href="#"><img class="pic-1" src="img/home/saree-red.jpg" alt="Woman wearing a red bridal saree"><img class="pic-2" src="img/home/saree-blue.jpg" alt="Woman wearing a blue saree"></a>
-								<ul class="social"><li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li><li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li></ul>
 							</div>
 							<div class="product-content">
 								<p class="trending-vendor">Vendor: Navaa Designs</p>
 								<h3 class="title"><a href="#">Balaramapuram Thulasi theertham settu mundu</a></h3>
 								<div class="price"><span class="trending-price-label">Regular price</span>Rs. 960.00</div>
-								<div class="trending-actions">
-									<a class="trending-quick-buy" href="">Quick buy</a>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -1610,15 +1401,11 @@
 						<div class="product-grid">
 							<div class="product-image">
 								<a href="#"><img class="pic-1" src="img/home/saree-walk.jpg" alt="Woman wearing a traditional saree"><img class="pic-2" src="img/home/saree-pattern.jpg" alt="Black and white traditional saree"></a>
-								<ul class="social"><li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li><li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li></ul>
 							</div>
 							<div class="product-content">
 								<p class="trending-vendor">Vendor: Navaa Designs</p>
 								<h3 class="title"><a href="#">Balaramapuram cotton settu mundu</a></h3>
 								<div class="price"><span class="trending-price-label">Regular price</span>Rs. 860.00</div>
-								<div class="trending-actions">
-									<a class="trending-quick-buy" href="">Quick buy</a>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -1735,10 +1522,6 @@
 									<img class="pic-1" src="img/home/kasavu-saree.jpg" alt="Kerala kasavu saree">
 									<img class="pic-2" src="img/home/saree-orange.jpg" alt="Woman wearing an orange saree">
 								</a>
-								<ul class="social">
-									<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
-									<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
-								</ul>
 								<span class="product-new-label">Sale</span>
 							</div>
 							<ul class="rating">
@@ -1764,10 +1547,6 @@
 									<img class="pic-1" src="img/home/saree-green.jpg" alt="Woman wearing a green saree">
 									<img class="pic-2" src="img/home/saree-walk.jpg" alt="Woman wearing a traditional saree">
 								</a>
-								<ul class="social">
-									<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
-									<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
-								</ul>
 								<span class="product-new-label">-20%</span>				
 							</div>
 							<ul class="rating">
@@ -1793,10 +1572,6 @@
 									<img class="pic-1" src="img/home/bridal.jpg" alt="Woman wearing an ornate bridal saree">
 									<img class="pic-2" src="img/home/saree-blue.jpg" alt="Woman wearing a blue saree">
 								</a>
-								<ul class="social">
-									<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
-									<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
-								</ul>
 								<span class="product-new-label">Sale</span>
 							</div>
 							<ul class="rating">
@@ -1823,10 +1598,6 @@
 									<img class="pic-1" src="img/home/saree-walk.jpg" alt="Woman wearing a traditional saree">
 									<img class="pic-2" src="img/home/saree-pattern.jpg" alt="Black and white traditional saree">
 								</a>
-								<ul class="social">
-									<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
-									<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
-								</ul>
 								<span class="product-new-label">New</span>
 							</div>
 							<ul class="rating">
@@ -1853,10 +1624,6 @@
 									<img class="pic-1" src="img/home/saree-orange.jpg" alt="Woman wearing an orange saree">
 									<img class="pic-2" src="img/home/saree-blue.jpg" alt="Woman wearing a blue saree">
 								</a>
-								<ul class="social">
-									<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
-									<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
-								</ul>
 								<span class="product-new-label">Sale</span>
 							</div>
 							<ul class="rating">
@@ -1882,10 +1649,6 @@
 									<img class="pic-1" src="img/home/saree-blue.jpg" alt="Woman wearing a blue saree">
 									<img class="pic-2" src="img/home/saree-orange.jpg" alt="Woman wearing an orange saree">
 								</a>
-								<ul class="social">
-									<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
-									<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
-								</ul>
 								<span class="product-new-label">-30%</span>
 							</div>
 							<ul class="rating">
@@ -1911,10 +1674,6 @@
 									<img class="pic-1" src="img/home/saree-pattern.jpg" alt="Traditional patterned saree">
 									<img class="pic-2" src="img/home/saree-pattern.jpg" alt="Black and white traditional saree">
 								</a>
-								<ul class="social">
-									<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
-									<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
-								</ul>
 								<span class="product-new-label">Sale</span>
 							</div>
 							<ul class="rating">
@@ -1941,10 +1700,6 @@
 									<img class="pic-1" src="img/home/saree-red.jpg" alt="Woman wearing a red festive saree">
 									<img class="pic-2" src="img/home/kasavu-saree.jpg" alt="Kerala kasavu saree">
 								</a>
-								<ul class="social">
-									<li><a href="" data-tip="Quick View"><i class="ti-zoom-in"></i></a></li>
-									<li><a href="" data-tip="Add to Wishlist"><i class="ti-bag"></i></a></li>
-								</ul>
 								<span class="product-new-label">-50%</span>
 							</div>
 							<ul class="rating">
@@ -1966,6 +1721,19 @@
 			</div>
 		</section>
 		<!-- End Featured Products Area -->
+
+		<dialog id="quick-view-dialog" aria-labelledby="quick-view-title">
+			<form method="dialog">
+				<button class="quick-view-close" type="submit" aria-label="Close quick view">&times;</button>
+			</form>
+			<div class="quick-view-content">
+				<img id="quick-view-image" src="" alt="">
+				<div class="quick-view-details">
+					<h2 id="quick-view-title"></h2>
+					<p id="quick-view-price"></p>
+				</div>
+			</div>
+		</dialog>
 
 		<!-- Testimonials Area -->
 		<section id="testimonials" class="testimonials_area" style="background: url(img/home/fabric-stack.jpg); background-size: cover; background-attachment: fixed;">
@@ -2103,11 +1871,11 @@
 			</div>
 		</section>
         <!--   Our story end  -->
-		
-        <!--  Process -->
+
+		<!--  Process -->
 		<section class="process_area section_padding">
 			<div class="container">
-				<div class="row text-center">		
+				<div class="row text-center">
 					<div class="col-lg-3 col-md-6 col-sm-6">
 						<div class="single-process">
 							<!-- process Icon -->
@@ -2117,8 +1885,8 @@
 								<h3>Free Shipping</h3>
 								<p>Best Shipping Service</p>
 							</div>
-						</div>	
-					</div>	<!-- End Col -->				
+						</div>
+					</div>	<!-- End Col -->
 
 					<div class="col-lg-3 col-md-6 col-sm-6">
 						<div class="single-process">
@@ -2129,8 +1897,8 @@
 								<h3>Cash On Delivery</h3>
 								<p>Fast Delivery Method</p>
 							</div>
-						</div>	
-					</div>	<!-- End Col -->				
+						</div>
+					</div>	<!-- End Col -->
 
 					<div class="col-lg-3 col-md-6 col-sm-6">
 						<div class="single-process">
@@ -2141,8 +1909,8 @@
 								<h3>Support 24/7</h3>
 								<p>24 Hours a Day</p>
 							</div>
-						</div>	
-					</div>	<!-- End Col -->				
+						</div>
+					</div>	<!-- End Col -->
 
 					<div class="col-lg-3 col-md-6 col-sm-6">
 						<div class="single-process">
@@ -2153,16 +1921,15 @@
 								<h3>30 Days Return</h3>
 								<p>Simply Return 30 Days</p>
 							</div>
-						</div>	
+						</div>
 					</div>	<!-- End Col -->
-					
+
 				</div>
 			</div>
 		</section>
         <!--  End Process -->
-		
 		<!--  FOOTER START  -->
-		<footer class="footer_area">
+		<footer id="contact" class="footer_area">
 			<div class="footer-top">
 				<div class="container">
 					<div class="row">				
@@ -2181,7 +1948,8 @@
 							<div class="single_ftr">
 								<h4 class="sf_title">Useful links</h4>
 								<ul>
-									<li><a href="#modal" data-remodal-target="modal">Search</a></li>
+									<li><a href="#brand_area">Our Story</a></li>
+									<li><a href="#blog_area">Journal</a></li>
 								</ul>
 							</div>
 						</div> <!--  End Col -->
@@ -2191,9 +1959,8 @@
 								<h4 class="sf_title">Quick links</h4>
 								<ul>
 									<li><a href="index.html">Home</a></li>
-									<li><a href="shop.html">Products</a></li>
 									<li><a href="#collections">Collections</a></li>
-									<li><a href="contact.html">Contact</a></li>
+									<li><a href="#contact">Contact</a></li>
 								</ul>
 							</div>
 						</div> <!--  End Col -->	
@@ -2223,12 +1990,8 @@
 							</div>
 						</div>
 						
-						<div class="col-sm-4">
+						<div class="col-sm-8">
 							<p class="copyright_text text-center">Designed By Cognetz</p>
-						</div>
-						
-						<div class="col-sm-4">
-							<div class="payment_mthd_icon text-right"></div>
 						</div>
 					</div>
 				</div>
@@ -2240,11 +2003,10 @@
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.meanmenu.min.js"></script>
-		<script src="js/jquery.mixitup.js"></script>
 		<script src="js/jquery.counterup.min.js"></script>
-		<script src="js/remodal.js"></script>
 		<script src="js/waypoints.min.js"></script>
 		<script src="js/wow.min.js"></script>
+		<script src="js/jquery.mixitup.js"></script>
 		<script src="js/jquery.countdown.js"></script>
 		<script src="js/venobox.min.js"></script>
 		<script src="js/owl.carousel.min.js"></script>

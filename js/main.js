@@ -26,7 +26,7 @@ jQuery(document).on('ready', function(){
 	------------------------*/
 	$('.mobile-menu nav').meanmenu({
 		meanScreenWidth: "767",
-		meanMenuContainer: ".header_btm_area .col-xs-12.col-sm-12.col-md-7",
+		meanMenuContainer: ".header_btm_area .col-xs-12.col-sm-12.col-md-9",
 	});
 	 
 	// jQuery Lightbox
@@ -37,6 +37,52 @@ jQuery(document).on('ready', function(){
 	
 
 	$('.venobox').venobox(); 
+
+	var quickViewDialog = document.getElementById('quick-view-dialog');
+	if (quickViewDialog && typeof quickViewDialog.showModal === 'function') {
+		var quickViewImage = document.getElementById('quick-view-image');
+		var quickViewTitle = document.getElementById('quick-view-title');
+		var quickViewPrice = document.getElementById('quick-view-price');
+
+		$('.product-grid').each(function() {
+			var $card = $(this);
+			var productTitle = $card.find('.product-content .title').first().text().trim();
+			var $image = $card.find('.product-image').first();
+			if (!$image.length || !productTitle) {
+				console.error('Quick View requires a product image and title.', this);
+				return;
+			}
+
+			var $button = $('<button type="button" class="quick-view-button"><i class="ti-zoom-in" aria-hidden="true"></i></button>');
+			$button.attr('aria-label', 'Quick view: ' + productTitle);
+			$image.append($button);
+		});
+
+		$(document).on('click', '.quick-view-button', function() {
+			var $card = $(this).closest('.product-grid');
+			var image = $card.find('.product-image img.pic-1').first().get(0);
+			var title = $card.find('.product-content .title').first().get(0);
+			var price = $card.find('.product-content .price').first().get(0);
+			if (!image || !title || !price) {
+				console.error('Quick View requires a product image, title, and price.', $card.get(0));
+				return;
+			}
+
+			quickViewImage.src = image.currentSrc || image.src;
+			quickViewImage.alt = image.alt || title.textContent.trim();
+			quickViewTitle.textContent = title.textContent.trim();
+			quickViewPrice.textContent = price.textContent.replace(/\s+/g, ' ').trim();
+			quickViewDialog.showModal();
+		});
+
+		quickViewDialog.addEventListener('click', function(event) {
+			if (event.target === quickViewDialog) {
+				quickViewDialog.close();
+			}
+		});
+	} else if (quickViewDialog) {
+		console.error('Quick View is unavailable because this browser does not support dialogs.');
+	}
 	
 	
 	$(window).scroll(function() {
