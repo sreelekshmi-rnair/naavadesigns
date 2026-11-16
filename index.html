@@ -771,14 +771,36 @@
 				#featured_product .container > .row.text-center > [class*="col-"] {
 					width: 50%;
 				}
+				#product_area .product_item .row > .mix,
+				#trending-products + .row > [class*="col-"],
+				#featured_product .container > .row.text-center > [class*="col-"] {
+					padding-right: 8px;
+					padding-left: 8px;
+				}
+				#collections .container > .row:nth-child(3) > [class*="col-"] {
+					padding-right: 8px;
+					padding-left: 8px;
+				}
+				#product_area .product_item .row,
+				#trending-products + .row,
+				#featured_product .container > .row.text-center {
+					display: flex;
+					flex-wrap: wrap;
+					row-gap: 12px;
+				}
 				#blog_area > .container > .row:last-child > [class*="col-"],
 				.special_offer_area .row.text-center > [class*="col-"] {
 					width: 100%;
 				}
 				#trending-products + .row > [class*="col-"],
-				.special_offer_area .row.text-center > [class*="col-"],
 				#featured_product .container > .row.text-center > [class*="col-"] {
-					margin-bottom: 16px;
+					margin-bottom: 0;
+				}
+				#product_area .product-grid,
+				#trending-products + .row .product-grid,
+				#featured_product .product-grid {
+					height: auto;
+					margin-bottom: 0;
 				}
 				#testimonials {
 					background-attachment: scroll !important;
@@ -871,7 +893,6 @@
 											<li><a href="index.html">Home</a></li>
 											<li><a href="#collections">Collections</a></li>
 											<li><a href="#brand_area">Our Story</a></li>
-											<li><a href="#blog_area">Journal</a></li>
 											<li><a href="#contact">Contact</a></li>
 										</ul>
 									</nav>
@@ -883,7 +904,6 @@
 											<li><a href="index.html">Home</a></li>
 											<li><a href="#collections">Collections</a></li>
 											<li><a href="#brand_area">Our Story</a></li>
-											<li><a href="#blog_area">Journal</a></li>
 											<li><a href="#contact">Contact</a></li>
 										</ul>
 									</nav>
