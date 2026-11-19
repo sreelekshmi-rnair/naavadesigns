@@ -36,7 +36,39 @@ jQuery(document).on('ready', function(){
 	});	
 	
 
-	$('.venobox').venobox(); 
+	$('.venobox').venobox();
+
+	/* WHATSAPP ENQUIRY
+	   Put the shop's WhatsApp number here: country code + number, digits only
+	   (e.g. '919876543210'). While empty, WhatsApp opens and asks the visitor
+	   to pick a contact, so the buttons still work but go to no fixed number. */
+	var WHATSAPP_NUMBER = '919947406541';
+
+	function whatsappLink(message) {
+		return 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(message);
+	}
+
+	$('.product-grid').each(function() {
+		var $card = $(this);
+		var $content = $card.find('.product-content').first();
+		var title = $content.find('.title').first().text().replace(/\s+/g, ' ').trim();
+		if (!$content.length || !title) {
+			return;
+		}
+		var price = $content.find('.price').first().text().replace(/\s+/g, ' ').trim()
+			.replace(/^₹\s*/, 'Rs. ').replace(/\.00$/, '');
+		var message = 'Hi, I\'m interested in ' + title + (price ? ' (' + price + ')' : '');
+
+		$content.find('.add-to-cart').remove();
+		$('<a class="whatsapp-enquire" target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i> Enquire on WhatsApp</a>')
+			.attr('href', whatsappLink(message))
+			.attr('aria-label', 'Enquire on WhatsApp about ' + title)
+			.appendTo($content);
+	});
+
+	$('<a id="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>')
+		.attr('href', whatsappLink('Hi, I\'d like to know more about your collection.'))
+		.appendTo('body');
 
 	var quickViewDialog = document.getElementById('quick-view-dialog');
 	if (quickViewDialog && typeof quickViewDialog.showModal === 'function') {

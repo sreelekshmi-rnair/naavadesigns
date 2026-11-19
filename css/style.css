@@ -1313,6 +1313,7 @@ input:focus, textarea:focus {
     width: 100%;
     height: auto;
 }
+
 .product-grid .pic-1{
     opacity: 1;
     transition: all 0.3s ease-out 0s;
@@ -1828,8 +1829,8 @@ input:focus, textarea:focus {
 	position: relative;
 	color: #d6d6d6;
 	z-index: 100;
-	word-break: break-all;
-	word-wrap: break-word;
+	word-break: normal;
+	overflow-wrap: break-word;
 	background: #111;
 }
 .footer-top{
@@ -3326,4 +3327,101 @@ input:focus, textarea:focus {
 }
 #topcontrol:hover {
     background: #f0314e none repeat scroll 0 0;
+}
+/* Scroll-to-top sits above the floating WhatsApp button */
+#topcontrol {
+    bottom: 84px !important;
+    right: 22px !important;
+}
+
+/*START WHATSAPP*/
+#whatsapp-float {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 10000;
+    display: flex;
+    width: 54px;
+    height: 54px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #9b713b;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    font-size: 30px;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+#whatsapp-float:hover,
+#whatsapp-float:focus-visible {
+    background: #7a5829;
+    color: #fff;
+    transform: scale(1.06);
+}
+/* Card text sits under the image so the enquiry button has room */
+.product-grid .product-content {
+    position: relative;
+    bottom: auto;
+    padding: 10px 12px 14px;
+}
+.product-grid:hover .product-content { bottom: auto; }
+.product-grid .whatsapp-enquire {
+    display: flex;
+    margin-top: auto;
+    padding: 10px 12px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 1.5px solid #9b713b;
+    border-radius: 6px;
+    background: transparent;
+    color: #9b713b;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    transition: background 0.2s ease;
+}
+.product-grid .whatsapp-enquire i {
+    font-size: 18px;
+}
+.product-grid .whatsapp-enquire:hover,
+.product-grid .whatsapp-enquire:focus-visible {
+    background: #9b713b;
+    color: #fff;
+}
+/* Contact details (all pages): keep email lowercase, tappable links, WhatsApp icon */
+.call_area,
+.contact-email {
+    text-transform: none;
+}
+.call_area a,
+.footer-contact-info a {
+    color: inherit;
+    font-size: inherit;
+}
+.call_area a:hover,
+.footer-contact-info a:hover {
+    color: #ba8a48;
+}
+.contact-whatsapp {
+    display: inline-flex;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.call_area .contact-whatsapp i,
+.footer-contact-info .contact-whatsapp i {
+    padding: 0;
+    color: #ba8a48;
+    font-size: 19px;
+}
+/* Footer contact list: wrapped lines align with the text, not under the icon */
+.footer-contact-info li {
+    display: flex;
+    align-items: flex-start;
+}
+.footer-contact-info li > i {
+    flex: 0 0 auto;
+    padding-top: 3px;
+    padding-right: 8px;
 }
