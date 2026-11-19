@@ -55,9 +55,7 @@ jQuery(document).on('ready', function(){
 		if (!$content.length || !title) {
 			return;
 		}
-		var price = $content.find('.price').first().text().replace(/\s+/g, ' ').trim()
-			.replace(/^₹\s*/, 'Rs. ').replace(/\.00$/, '');
-		var message = 'Hi, I\'m interested in ' + title + (price ? ' (' + price + ')' : '');
+		var message = 'Hi, I\'m interested in ' + title + '. Could you share the price and availability?';
 
 		$content.find('.add-to-cart').remove();
 		$('<a class="whatsapp-enquire" target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i> Enquire on WhatsApp</a>')
@@ -74,7 +72,6 @@ jQuery(document).on('ready', function(){
 	if (quickViewDialog && typeof quickViewDialog.showModal === 'function') {
 		var quickViewImage = document.getElementById('quick-view-image');
 		var quickViewTitle = document.getElementById('quick-view-title');
-		var quickViewPrice = document.getElementById('quick-view-price');
 
 		$('.product-grid').each(function() {
 			var $card = $(this);
@@ -94,16 +91,14 @@ jQuery(document).on('ready', function(){
 			var $card = $(this).closest('.product-grid');
 			var image = $card.find('.product-image img.pic-1').first().get(0);
 			var title = $card.find('.product-content .title').first().get(0);
-			var price = $card.find('.product-content .price').first().get(0);
-			if (!image || !title || !price) {
-				console.error('Quick View requires a product image, title, and price.', $card.get(0));
+			if (!image || !title) {
+				console.error('Quick View requires a product image and title.', $card.get(0));
 				return;
 			}
 
 			quickViewImage.src = image.currentSrc || image.src;
 			quickViewImage.alt = image.alt || title.textContent.trim();
 			quickViewTitle.textContent = title.textContent.trim();
-			quickViewPrice.textContent = price.textContent.replace(/\s+/g, ' ').trim();
 			quickViewDialog.showModal();
 		});
 
